@@ -13,11 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('UsersData', function (Blueprint $table) {
+        Schema::create('pets', function (Blueprint $table) {
             $table->id();
-            $table->string('username', 10);
-            $table->string('password', 10);
-            $table->timestamp('last_used_at')->nullable();
+            $table->foreignId('UsersData_id')->constrained("UsersData","id");
+            $table->foreignId('animals_id')->constrained("animals","id");
+            $table->string('petname');
+            $table->integer('hunger');
+            $table->integer('thirst');
+            $table->integer('mood');
+            $table->date('birth');
             $table->timestamps();
         });
     }
@@ -29,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('UsersData');
+        Schema::dropIfExists('pets');
     }
 };
