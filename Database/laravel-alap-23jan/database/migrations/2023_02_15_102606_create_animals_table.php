@@ -13,11 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('UsersData', function (Blueprint $table) {
+        Schema::create('animals', function (Blueprint $table) {
             $table->id();
-            $table->string('username', 10);
-            $table->string('password', 10);
-            $table->timestamp('last_used_at')->nullable();
+            $table->string('animaltype');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('UsersData');
+        Schema::dropIfExists('animals');
     }
 };
