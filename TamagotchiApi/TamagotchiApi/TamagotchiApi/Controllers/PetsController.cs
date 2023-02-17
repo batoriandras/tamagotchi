@@ -20,11 +20,19 @@ namespace TamagotchiApi.Controllers
         {
             return data.Pets;
         }
+        // GET api/<PetsController>
+        [HttpGet("/pets/{id}")]
+        public Model.Pet GetCity(ulong id)
+        {
+            return data.Pets.FirstOrDefault(x => x.Id == id);
+        }
 
         // POST api/<PetsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Model.Pet retval)
         {
+            data.Pets.Add(retval);
+            data.SaveChanges();
         }
 
         // PUT api/<PetsController>/5
@@ -35,8 +43,10 @@ namespace TamagotchiApi.Controllers
 
         // DELETE api/<PetsController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(ulong id)
         {
+            data.Pets.Remove(data.Pets.Find(id));
+            data.SaveChanges();
         }
     }
 }

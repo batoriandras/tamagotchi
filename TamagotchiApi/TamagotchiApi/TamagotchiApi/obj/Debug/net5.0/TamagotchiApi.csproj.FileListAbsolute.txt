@@ -36,3 +36,41 @@ E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\MySqlConnector.dll
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\appsettings.Development.json
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\appsettings.json
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\TamagotchiApi.exe
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\TamagotchiApi.deps.json
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\TamagotchiApi.runtimeconfig.json
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\TamagotchiApi.runtimeconfig.dev.json
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\TamagotchiApi.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\ref\TamagotchiApi.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\TamagotchiApi.pdb
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Humanizer.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\MySqlConnector.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.csproj.AssemblyReference.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.AssemblyInfoInputs.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.AssemblyInfo.cs
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.csproj.CoreCompileInputs.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.MvcApplicationPartsAssemblyInfo.cs
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.MvcApplicationPartsAssemblyInfo.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\staticwebassets\TamagotchiApi.StaticWebAssets.Manifest.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\staticwebassets\TamagotchiApi.StaticWebAssets.xml
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\scopedcss\bundle\TamagotchiApi.styles.css
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.RazorTargetAssemblyInfo.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.csproj.CopyComplete
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\ref\TamagotchiApi.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.pdb
+D:\projektek\tamagochi\tamagotchi\TamagotchiApi\TamagotchiApi\TamagotchiApi\obj\Debug\net5.0\TamagotchiApi.genruntimeconfig.cache

@@ -22,9 +22,17 @@ namespace TamagotchiApi.Controllers
 
         // GET api/<PetsController>
         [HttpGet("/users/{id}")]
-        public IEnumerable<Model.UsersDatum> GetUserById(int id)
+        public Model.UsersDatum GetUserById(ulong id)
         {
             return data.UsersData.FirstOrDefault(x=>x.Id == id);
+        }
+
+        // POST api/<PetsController>
+        [HttpPost]
+        public void Post([FromBody] Model.UsersDatum retval)
+        {
+            data.UsersData.Add(retval);
+            data.SaveChanges();
         }
 
         // PUT api/<UserController>/5
@@ -34,9 +42,11 @@ namespace TamagotchiApi.Controllers
         }
 
         // DELETE api/<UserController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("/{id}")]
+        public void Delete(ulong id)
         {
+            data.UsersData.Remove(data.UsersData.Find(id));
+            data.SaveChanges();
         }
     }
 }
