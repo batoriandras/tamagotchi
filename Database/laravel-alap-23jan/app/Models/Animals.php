@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Animals extends Model
 {
     protected $table = "animals";
+    public function petsanimaltype()
+    {
+        return $this->hasMany(Pets::class,"animals_id","id");
+    }
 }
