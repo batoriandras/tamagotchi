@@ -1,7 +1,7 @@
 <template>
-        <div class="row mb-3">
+     <div class="row mb-3">
             <div class="col">
-                <h2>Login</h2>
+                <h2>Register</h2>
             </div>
         </div>
         <div class="row mb-3 p-4">
@@ -10,17 +10,18 @@
                     <label for="username">Username</label><br>
                     <input type="text" name="username" id="username" class="form-control">
 
-                    <label for="pwd">Password</label> <br>
+                    <label for="pwd">Password</label><br>
+                    <input type="password" name="pwd" id="pwd" class="form-control">
+
+                    <label for="pwd">Password again</label><br>
                     <input type="password" name="pwd" id="pwd" class="form-control">
                     <br>
-                    <input class="btn btn-light w-50" type="submit" value="Go">
+                    <input class="btn btn-light w-50" type="submit" value="Sign up">
                 </form>
             </div>
         </div>
-        <div class="row mb-3">
-                <Router-link class="btn" to="/signup">Sign up</Router-link>
-        </div>
 </template>
+
 <style scoped>
 .row {
     background-color: #D89E0A;
