@@ -10,42 +10,42 @@ namespace TamagotchiApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PetsController : ControllerBase
+    public class AnimalController : ControllerBase
     {
         Model.laravelContext data = new Model.laravelContext();
-
-        // GET api/<PetsController>
-        [HttpGet("/pets")]
-        public IEnumerable<Model.Pet> GetAllPets()
+        // GET: api/<AnimalController>
+        [HttpGet("/animals")]
+        public IEnumerable<Model.Animal> GetAllanimals()
         {
-            return data.Pets;
-        }
-        // GET api/<PetsController>
-        [HttpGet("/pets/{id}")]
-        public Model.Pet GetPetById(ulong id)
-        {
-            return data.Pets.FirstOrDefault(x => x.Id == id);
+            return data.Animals;
         }
 
-        // POST api/<PetsController>
+        // GET api/<AnimalController>/5
+        [HttpGet("/animals/{id}")]
+        public Model.Animal GetAnimalById(ulong id)
+        {
+            return data.Animals.FirstOrDefault(x => x.Id == id);
+        }
+
+        // POST api/<AnimalController>
         [HttpPost]
-        public void Post([FromBody] Model.Pet retval)
+        public void Post([FromBody] Model.Animal retval)
         {
-            data.Pets.Add(retval);
+            data.Animals.Add(retval);
             data.SaveChanges();
         }
 
-        // PUT api/<PetsController>/5
+        // PUT api/<AnimalController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<PetsController>/5
+        // DELETE api/<AnimalController>/5
         [HttpDelete("{id}")]
         public void Delete(ulong id)
         {
-            data.Pets.Remove(data.Pets.Find(id));
+            data.Animals.Remove(data.Animals.Find(id));
             data.SaveChanges();
         }
     }

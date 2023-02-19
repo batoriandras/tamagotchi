@@ -16,9 +16,9 @@ class AnimalSeeder extends Seeder
     public function run()
     {
         DB::table('animals')->insert([
-            ["animaltype"=>"Tigris"],
-            ["animaltype"=>"Oroszlán"],
-            ["animaltype"=>"Párduc"]
+            ["animaltype"=>"Tigris","animalimg"=>"tiger.png"],
+            ["animaltype"=>"Oroszlán","animalimg"=>"lion.png"],
+            ["animaltype"=>"Párduc","animalimg"=>"panther.png"]
         ]);
     }
 }

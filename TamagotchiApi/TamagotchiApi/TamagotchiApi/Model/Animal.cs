@@ -14,6 +14,7 @@ namespace TamagotchiApi.Model
 
         public ulong Id { get; set; }
         public string Animaltype { get; set; }
+        public string Animalimg { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
 
