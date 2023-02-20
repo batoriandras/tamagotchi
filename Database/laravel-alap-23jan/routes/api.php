@@ -24,3 +24,7 @@ Route::get('/user/{id}', [UserController::class, 'show']);
 Route::post('/newuser', [UserController::class, 'store']);
 Route::put('/edituser/{id}', [UserController::class, 'update']);
 Route::delete('/delete/{id}', [UserController::class, 'destroy']);
+
+Route::middleware('auth:sanctum')->get('/pet', function (Request $request) {
+    return $request->user();
+});
