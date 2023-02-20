@@ -8,10 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Pets extends Model
 {
     protected $table = "pets";
-    public function PetsAnimals(){
-        return $this->belongsTo(Animals::class,"id","animals_id");
+    public function PetsAnimal(){
+        return $this->belongsTo(Animals::class, "animals_id", "id");
     }
-    public function PetsUsers(){
-        return $this->belongsTo(UserModel::class,"id","UsersData_id");
+    public function PetsUser(){
+        return $this->belongsTo(User::class,"users_id","id");
     }
 }

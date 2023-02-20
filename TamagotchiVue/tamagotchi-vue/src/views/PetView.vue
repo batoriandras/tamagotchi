@@ -25,11 +25,18 @@
                 
             </div>
         </div>
+        <button class="btn btn-danger" @click="deleteAcc(id)">Delete account</button>
     </div>
 </template>
 <script setup>
 import Pet from "../components/Pet.vue"
 import PetAction from "../components/PetAction.vue"
+
+async function deleteAcc(id){
+    const response = await http.delete('delete/' + id);
+}
+
+
 </script>
 <style scoped>
 .col-6, .col-3 {

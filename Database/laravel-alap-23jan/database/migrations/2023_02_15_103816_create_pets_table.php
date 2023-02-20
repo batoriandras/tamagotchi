@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('pets', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('UsersData_id')->constrained("UsersData","id");
+            $table->foreignId('users_id')->constrained("users","id");
             $table->foreignId('animals_id')->constrained("animals","id");
             $table->string('petname');
             $table->integer('hunger');

@@ -1,34 +1,23 @@
 <script>
 import Signup from '../components/Signup.vue'
-import axios from axios;
+import {http} from '../helper/http.js'
 
 export default{
     components:{
         Signup
     },
-    data(){
-        return {
-            users: []
-        }
-    },
     methods:{
         async registerUser(newUser){
-            const response = await axios.post('https://localhost:5001/api/User', newUser);
-            this.users.push(response.data);
+            const response = await http.post('newuser', newUser);
+            this.$router.push({name: 'login'});
         }
-    },
-    props:{
-        users: Array
-    },
-    emits:[
-        "registerUser"
-    ],
+    }
 }
 
 </script>
 <template>
     <div class="container-fluid">
-        <Signup @register-user="(newUser) => $emit('registerUser',newUser)"/>
+        <Signup @register-user="registerUser"/>
     </div>
 </template>
 <style scoped>

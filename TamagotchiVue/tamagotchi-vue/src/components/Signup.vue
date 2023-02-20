@@ -6,14 +6,14 @@
         </div>
         <div class="row mb-3 p-4">
             <div class="col">
-                <form>
+                <form @submit.prevent="$emit('registerUser',newUser)">
                     <label for="username">Username</label><br>
                     <input type="text" name="username" id="username" class="form-control" v-model="newUser.username">
 
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password" class="form-control" v-model="newUser.password">
 
-                    <button class="btn btn-danger" @click="$emit('registerUser',newUser)"> Sign Up</button>
+                    <button class="btn btn-danger" type="submit">Sign Up</button>
                 </form>
             </div>
         </div>
@@ -22,16 +22,11 @@
 <script>
 
 export default{
-    name: "Signup",
 data(){
     return{
         newUser:{
-            "username": "",
-            "password": "",
-            "lastUsedAt": null,
-            "createdAt": null,
-            "updatedAt": null,
-            "pets": []
+            username: "",
+            password: ""
         }
     }
 },
