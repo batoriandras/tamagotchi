@@ -8,12 +8,10 @@
 
   <ItemGroup>
     <None Remove="login_bg.jpg" />
-    <None Remove="tamagotchi.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="login_bg.jpg" />
-    <Resource Include="tamagotchi.jpg" />
   </ItemGroup>
 
 </Project>

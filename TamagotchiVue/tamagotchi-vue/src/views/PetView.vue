@@ -1,4 +1,5 @@
 <template>
+    <NavBar />
 <div class="container petcontainer">
     <div class="stat">
         <div class="data"><Petstat /></div>
@@ -14,7 +15,7 @@
 import Petstat from "../components/PetStat.vue"
 import Pet from "../components/Pet.vue"
 import PetAction from "../components/PetAction.vue"
-
+import NavBar from "../components/NavBar.vue"
 
 </script>
 <style scoped>

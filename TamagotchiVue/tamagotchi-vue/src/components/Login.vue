@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="row mb-3">
-                <Router-link class="btn" to="/signup">Sign up</Router-link>
+                <Router-link class="btn btn-danger" to="/signup">Sign up</Router-link>
         </div>
 </template>
 <script>
