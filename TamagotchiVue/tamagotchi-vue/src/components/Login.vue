@@ -6,14 +6,14 @@
         </div>
         <div class="row mb-3 p-4">
             <div class="col">
-                <form>
+                <form @submit.prevent="checkUser()">
                     <label for="username">Username</label><br>
-                    <input type="text" name="username" id="username" class="form-control">
+                    <input type="text" name="username" id="username" class="form-control" v-model="theUser.username">
 
-                    <label for="pwd">Password</label> <br>
-                    <input type="password" name="pwd" id="pwd" class="form-control">
+                    <label for="password">Password</label> <br>
+                    <input type="password" name="password" id="password" class="form-control" v-model="theUser.password">
                     <br>
-                    <input class="btn btn-light w-50" type="submit" value="Go">
+                    <button class="btn btn-warning" type="submit">Login</button>
                 </form>
             </div>
         </div>
@@ -21,6 +21,29 @@
                 <Router-link class="btn" to="/signup">Sign up</Router-link>
         </div>
 </template>
+<script>
+import {http} from '../helper/http.js'
+export default{
+    data(){
+    return{
+        theUser:{
+            username: "",
+            password: ""
+        }
+    }
+},
+methods:{
+        async checkUser(){
+            const response = await http.get('users');
+            response.data.data.forEach(element => {
+                if (element.username == this.theUser.username) {
+                    this.$router.push({name: 'pet'});
+                }
+            });
+        }
+    }
+}
+</script>
 <style scoped>
 .row {
     background-color: #D89E0A;
