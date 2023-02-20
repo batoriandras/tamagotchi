@@ -12,8 +12,8 @@
 
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password" class="form-control" v-model="newUser.password">
-
-                    <button class="btn btn-danger" type="submit">Sign Up</button>
+                    <br>
+                    <button class="btn btn-danger text-dark" type="submit">Sign Up</button>
                 </form>
             </div>
         </div>

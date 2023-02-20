@@ -1,0 +1,36 @@
+<template>
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <Router-link class="navbar-brand" to="/pet">Pet</Router-link>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+         <Router-link class="nav-link active" aria-current="page" to="/account">Account</Router-link>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+         <Router-link class="nav-link active" aria-current="page" to="/">Log out</Router-link>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+</template>
+<style>
+nav{
+    background-color: #D89E0A;
+    font-weight: bold;
+}
+Router-link{
+    
+    text-decoration: none;
+    color:black;
+    font-size: larger;
+}
+</style>

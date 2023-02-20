@@ -8,5 +8,7 @@
 <style scoped>
 button{
     background-color: brown;
+    padding: 10px;
+    color:wheat
 }
 </style>

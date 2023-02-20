@@ -30,7 +30,6 @@
     text-align: center;
     margin: auto;
 }
-
 p{
     margin:auto;
     text-decoration: none;

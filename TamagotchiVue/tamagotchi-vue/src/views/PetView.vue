@@ -1,48 +1,54 @@
 <template>
-   <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3 stats">
-                
-            </div>
-            <div class="col-6 petimg">
-                <div class="row">
-                    <div class="col">
-                        <Pet />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <PetAction />
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                
-            </div>
-        </div>
-        <button class="btn btn-danger" @click="deleteAcc(id)">Delete account</button>
+<div class="container petcontainer">
+    <div class="stat">
+        <div class="data"><Petstat /></div>
+        <div class="items"></div>
     </div>
+    <div class="pet">
+        <Pet />
+        <PetAction />
+    </div>
+</div>
 </template>
 <script setup>
+import Petstat from "../components/PetStat.vue"
 import Pet from "../components/Pet.vue"
 import PetAction from "../components/PetAction.vue"
-
-async function deleteAcc(id){
-    const response = await http.delete('delete/' + id);
-}
 
 
 </script>
 <style scoped>
-.col-6, .col-3 {
-    background-color: #D89E0A;
+.data{
+    background-color:rgb(216, 158, 10);
+    margin-top: 20px;
     border-radius: 40px;
+    padding: 20px;
     color: black;
     text-align: center;
 }
+.items{
+    background-color:rgb(216, 158, 10);
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    height: 65%;
+}
+.pet{
+    background-color: rgba(216, 158, 10, 70%);
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+.stat{
+    background-color: rgba(216, 158, 10, 70%);
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 20px;
+    color: black;
+}
+
 </style>
