@@ -8,19 +8,38 @@
             <div class="col">
                 <form>
                     <label for="username">Username</label><br>
-                    <input type="text" name="username" id="username" class="form-control">
+                    <input type="text" name="username" id="username" class="form-control" v-model="newUser.username">
 
-                    <label for="pwd">Password</label><br>
-                    <input type="password" name="pwd" id="pwd" class="form-control">
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" class="form-control" v-model="newUser.password">
 
-                    <label for="pwd">Password again</label><br>
-                    <input type="password" name="pwd" id="pwd" class="form-control">
-                    <br>
-                    <input class="btn btn-light w-50" type="submit" value="Sign up">
+                    <button class="btn btn-danger" @click="$emit('registerUser',newUser)"> Sign Up</button>
                 </form>
             </div>
         </div>
 </template>
+
+<script>
+
+export default{
+    name: "Signup",
+data(){
+    return{
+        newUser:{
+            "username": "",
+            "password": "",
+            "lastUsedAt": null,
+            "createdAt": null,
+            "updatedAt": null,
+            "pets": []
+        }
+    }
+},
+emits:[
+        "registerUser"
+]
+}
+</script>
 
 <style scoped>
 .row {

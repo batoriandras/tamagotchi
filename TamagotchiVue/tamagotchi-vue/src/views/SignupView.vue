@@ -1,10 +1,34 @@
-<script setup>
+<script>
 import Signup from '../components/Signup.vue'
+import axios from axios;
+
+export default{
+    components:{
+        Signup
+    },
+    data(){
+        return {
+            users: []
+        }
+    },
+    methods:{
+        async registerUser(newUser){
+            const response = await axios.post('https://localhost:5001/api/User', newUser);
+            this.users.push(response.data);
+        }
+    },
+    props:{
+        users: Array
+    },
+    emits:[
+        "registerUser"
+    ],
+}
 
 </script>
 <template>
     <div class="container-fluid">
-        <Signup />
+        <Signup @register-user="(newUser) => $emit('registerUser',newUser)"/>
     </div>
 </template>
 <style scoped>

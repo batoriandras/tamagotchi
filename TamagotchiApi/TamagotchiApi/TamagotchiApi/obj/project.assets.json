@@ -1009,19 +1009,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KiKi\\.nuget\\packages\\": {}
+    "C:\\Users\\adama\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi.csproj",
+      "projectUniqueName": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi.csproj",
       "projectName": "TamagotchiApi",
-      "projectPath": "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi.csproj",
-      "packagesPath": "C:\\Users\\KiKi\\.nuget\\packages\\",
-      "outputPath": "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi\\obj\\",
+      "projectPath": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi.csproj",
+      "packagesPath": "C:\\Users\\adama\\.nuget\\packages\\",
+      "outputPath": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApi\\TamagotchiApi\\TamagotchiApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KiKi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adama\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1084,7 +1084,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
       }
     }
   }
