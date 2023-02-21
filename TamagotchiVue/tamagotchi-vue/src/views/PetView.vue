@@ -2,7 +2,7 @@
     <NavBar />
 <div class="container petcontainer">
     <div class="stat">
-        <div class="data"><Petstat /></div>
+        <div class="data"><Petstat :pet="pet" /></div>
         <div class="items"></div>
     </div>
     <div class="pet">
@@ -11,11 +11,36 @@
     </div>
 </div>
 </template>
-<script setup>
+<script>
 import Petstat from "../components/PetStat.vue"
 import Pet from "../components/Pet.vue"
 import PetAction from "../components/PetAction.vue"
 import NavBar from "../components/NavBar.vue"
+import {http} from '../helper/http.js'
+
+export default{
+    components:{
+        Petstat,
+        Pet,
+        PetAction,
+        NavBar
+    },
+    data(){
+return{
+    pet: []
+}
+    },
+    
+methods:{
+        async petStats(){
+            const response = await http.get('pet/1');
+            this.pet = response.data.data;
+        }
+},
+mounted(){
+    this.petStats()
+}
+}
 
 </script>
 <style scoped>

@@ -8,11 +8,16 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\bator\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\adama\\.nuget\\packages\\": {}
+>>>>>>> 91163d1321a55386221ef58853757c9ef6f03c59
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\tamagotchi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
       "projectName": "TamagotchiApp",
       "projectPath": "D:\\tamagotchi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
@@ -21,6 +26,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
+      "projectName": "TamagotchiApp",
+      "projectPath": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
+      "packagesPath": "C:\\Users\\adama\\.nuget\\packages\\",
+      "outputPath": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\adama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 91163d1321a55386221ef58853757c9ef6f03c59
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +79,11 @@
             "privateAssets": "none"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+>>>>>>> 91163d1321a55386221ef58853757c9ef6f03c59
       }
     }
   }

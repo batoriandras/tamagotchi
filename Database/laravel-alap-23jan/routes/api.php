@@ -20,27 +20,26 @@ use App\Http\Controllers\AnimalController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
 Route::get('/users', [UserController::class, 'index']);
 Route::get('/user/{id}', [UserController::class, 'show']);
 Route::post('/newuser', [UserController::class, 'store']);
 Route::put('/edituser/{id}', [UserController::class, 'update']);
 Route::delete('/delete/{id}', [UserController::class, 'destroy']);
 
+
 Route::middleware('auth:sanctum')->get('/pet', function (Request $request) {
     return $request->user();
 });
-
 Route::get('/pets', [PetController::class, 'index']);
 Route::get('/pet/{id}', [PetController::class, 'show']);
 Route::post('/newpet', [PetController::class, 'store']);
 Route::put('/editpet/{id}', [PetController::class, 'update']);
 Route::delete('/delete/{id}', [PetController::class, 'destroy']);
 
+
 Route::middleware('auth:sanctum')->get('/animal', function (Request $request) {
     return $request->user();
 });
-
 Route::get('/animals', [AnimalController::class, 'index']);
 Route::get('/animal/{id}', [AnimalController::class, 'show']);
 Route::post('/newanimal', [AnimalController::class, 'store']);

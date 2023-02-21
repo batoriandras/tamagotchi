@@ -4,17 +4,31 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\
+=======
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\
+>>>>>>> 91163d1321a55386221ef58853757c9ef6f03c59
 TamagotchiApp
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+<<<<<<< HEAD
 D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
 2-1574369816
+=======
+<<<<<<< HEAD
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
+2-216653475
+=======
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
+11407045341
+>>>>>>> 5e35120b03e839ec5e528cf4e45a7c7af54be171
+>>>>>>> 91163d1321a55386221ef58853757c9ef6f03c59
 
 61852024027
 193-1891726104
 AnimalAdd.xaml;MainWindow.xaml;
 
-True
+False
 
