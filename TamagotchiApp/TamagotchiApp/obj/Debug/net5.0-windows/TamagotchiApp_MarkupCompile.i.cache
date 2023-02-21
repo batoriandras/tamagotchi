@@ -9,12 +9,17 @@ TamagotchiApp
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+<<<<<<< HEAD
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
 2-216653475
+=======
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
+11407045341
+>>>>>>> 5e35120b03e839ec5e528cf4e45a7c7af54be171
 
-6-125364560
+5485941431
 193-1891726104
-LoginWindow.xaml;MainWindow.xaml;
+MainWindow.xaml;
 
 False
 

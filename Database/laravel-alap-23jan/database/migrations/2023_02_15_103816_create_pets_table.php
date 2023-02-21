@@ -22,6 +22,7 @@ return new class extends Migration
             $table->dateTime('hungerdate');
             $table->integer('thirst');
             $table->integer('mood');
+            $table->integer('fatigue');
             $table->date('birth');
             $table->timestamps();
         });
