@@ -18,7 +18,7 @@ class PetController extends Controller
     public function index()
     {
         $data = Pets::all();
-        return userResource::collection($data);
+        return petResource::collection($data);
     }
 
     /**

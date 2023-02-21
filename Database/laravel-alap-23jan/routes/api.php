@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PetController;
+use App\Http\Controllers\AnimalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,11 @@ Route::get('/pet/{id}', [PetController::class, 'show']);
 Route::post('/newpet', [PetController::class, 'store']);
 Route::put('/editpet/{id}', [PetController::class, 'update']);
 Route::delete('/delete/{id}', [PetController::class, 'destroy']);
+
+Route::middleware('auth:sanctum')->get('/animal', function (Request $request) {
+    return $request->user();
+});
+
+Route::get('/animals', [AnimalController::class, 'index']);
+Route::get('/animal/{id}', [AnimalController::class, 'show']);
+Route::post('/newanimal', [AnimalController::class, 'store']);
