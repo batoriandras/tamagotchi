@@ -6,45 +6,47 @@
         </div>
         <div class="row mb-3 p-4">
             <div class="col">
-                <form @submit.prevent="checkUser()">
-                    <label for="username">Username</label><br>
-                    <input type="text" name="username" id="username" class="form-control" v-model="theUser.username">
+                <form @submit.prevent="login">
+                    <label for="username">Username:</label><br>
+                    <input type="text" name="username" id="username" class="form-control" v-model="userData.username">
 
-                    <label for="password">Password</label> <br>
-                    <input type="password" name="password" id="password" class="form-control" v-model="theUser.password">
+                    <label for="password">Password:</label> <br>
+                    <input type="password" name="password" id="password" class="form-control" v-model="userData.password">
                     <br>
                     <button class="btn btn-warning" type="submit">Login</button>
                 </form>
             </div>
         </div>
         <div class="row mb-3">
-                <Router-link class="btn btn-danger" to="/signup">Sign up</Router-link>
+                <Router-link class="btn btn-warning" to="/signup">Sign up</Router-link>
         </div>
 </template>
-<script>
-import {http} from '../helper/http.js'
-export default{
-    data(){
-    return{
-        theUser:{
-            username: "",
-            password: ""
-        }
-    }
-},
-methods:{
-        async checkUser(){
-            const response = await http.get('users');
-            response.data.data.forEach(element => {
-                if (element.username == this.theUser.username) {
-                    this.$router.push({name: 'pet'});
-                }
-            });
-        }
+<script setup>
+import {reactive,ref} from 'vue';
+import {http} from '../helper/http.js';
+import {useRouter} from "vue-router";
+const router = useRouter();
+
+const userData = reactive({
+    username: '',
+    password: ''
+});
+
+const error = ref(null);
+
+async function login(){
+    const response = await http.post('login', userData);
+    if(response.status !== 200){
+        error.value = response.statusText
+    }else{
+        localStorage.setItem('token',response.data.data.token);
+        localStorage.setItem('userid',response.data.data.userid);
+        router.push({name: 'pet'});
     }
 }
 </script>
 <style scoped>
+
 .row {
     background-color: #D89E0A;
     border-radius: 40px;
@@ -68,5 +70,8 @@ input {
 label {
     padding: 10px;
     font-size: larger;
+}
+.btn{
+    border-radius: 40px;
 }
 </style>

@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Pets extends Model
 {
     protected $casts = [
-        'birth' => 'date_format:d/m/yyyy'
+        'birth' => 'datetime:d/m/Y',
+        'hungerdate' => 'datetime:d/m/Y H:i:m'
     ];
     protected $table = "pets";
     public function PetsAnimal(){

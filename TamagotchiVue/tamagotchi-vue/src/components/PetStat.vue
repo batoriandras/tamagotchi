@@ -1,7 +1,14 @@
 <template>
-        <label  for="">Days: </label><br>
-        <label  for="">Mood level:</label><br>
-        <label  for="">Hunger level:</label><br>
-        <label  for="">Thist level:</label><br>
-        <label for="">Birth level:</label><br>
+        <label>Days: </label><br>
+        <label>Mood level: {{pet.mood}} </label><br>
+        <label>Hunger level: {{pet.hunger}} </label><br>
+        <label>Thirst level: {{pet.thirst}} </label><br>
+        <label>Birth: {{ pet.birth }}</label><br>
 </template>
+<script>
+export default{
+props:{
+        pet: Object
+}
+}
+</script>

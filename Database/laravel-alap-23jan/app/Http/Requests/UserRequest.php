@@ -24,7 +24,7 @@ class UserRequest extends FormRequest
     public function rules()
     {
         return [
-            'petname' => ['required', 'min:4', 'max:8'],
+            'username' => ['required', 'min:4', 'max:8'],
             'password' => ['required', 'min:5', 'max:10', 'alpha_num']
         ];
     }

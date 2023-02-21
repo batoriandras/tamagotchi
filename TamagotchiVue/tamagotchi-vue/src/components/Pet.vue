@@ -1,6 +1,10 @@
 <template>
-   <img src="/img/tiger.png" alt="lion">
+   <img :src="`/img/${animal.animalimg}`" :alt="`${animal.animalimg}`">
 </template>
-<style scoped>
-
-</style>
+<script>
+export default{
+props:{
+        animal: Object
+}
+}
+</script>

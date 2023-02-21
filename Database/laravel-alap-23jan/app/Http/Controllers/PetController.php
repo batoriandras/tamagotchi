@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Http\Resources\petResource;
 use App\Models\Pets;
 use App\Http\Requests\PetRequest;
-use Illuminate\Support\Facades\Hash;
 
 class PetController extends Controller
 {
@@ -39,7 +38,7 @@ class PetController extends Controller
         $newpet->mood = 100;
         $newpet->birth = date('Y-m-d');
         $newpet->save();
-        return $newpet;
+        return new petResource($newpet);
     }
 
     /**
@@ -50,8 +49,8 @@ class PetController extends Controller
      */
     public function show($id)
     {
-        $data = Pets::findOrFail('id', $id);
-        return $data;
+        $data = Pets::findorFail($id);
+        return new petResource($data);
     }
 
     /**
@@ -63,9 +62,11 @@ class PetController extends Controller
      */
     public function update(PetRequest $request, $id)
     {
-        $data = Pets::findOrFail('id',$id);
+        $data = Pets::findOrFail($id);
         $data->petname = $request->validated()['petname'];
         $data->hungerdate = dateTime('Y-m-d H:i:s');
+        $data->save();
+        return new petResource($data);
     }
 
     /**
@@ -76,6 +77,6 @@ class PetController extends Controller
      */
     public function destroy($id)
     {
-        $data = Pets::findOrFail('id', $id)->delete();
+        $data = Pets::findOrFail($id)->delete();
     }
 }

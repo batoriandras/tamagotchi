@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\http\Resources\animalResource;
+use App\Http\Resources\animalResource;
 use App\Http\Requests\AnimalRequest;
+use App\Models\Animals;
 
 class AnimalController extends Controller
 {
@@ -31,7 +32,7 @@ class AnimalController extends Controller
         $newanimal -> animaltype = $request->validated()['animaltype'];
         $newanimal -> animalimg = $request->validated()['animalimg'];
         $newanimal -> save();
-        return $newanimal;
+        return new animalResource($newanimal);
     }
 
     /**
@@ -42,7 +43,7 @@ class AnimalController extends Controller
      */
     public function show($id)
     {
-        $data Animals::findorfail('id', $id);
-        return $data;
+        $data = Animals::findorfail($id);
+        return new animalResource($data);
     }
 }

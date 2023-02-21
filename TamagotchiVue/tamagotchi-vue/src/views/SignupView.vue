@@ -29,11 +29,3 @@ export default{
 
 }
 </style>
-<style>
-body {
-    backdrop-filter: blur(3px);
-    background-image: url(/login-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-</style>

@@ -7,9 +7,30 @@ use App\Http\Resources\userResource;
 use App\Models\User;
 use App\Http\Requests\UserRequest;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+    public function authenticate(UserRequest $request)
+    {
+        $data = $request->validated();
+        if(Auth::attempt($data)){
+            $token = Auth::user()->createToken('auth_token')->plainTextToken;
+            if($request->wantsJson()){
+                return response()->json(["data" => ["token"=>$token,"userid"=>Auth::user()->id]],200);
+            }
+        }
+        else{
+            if ($request->wantsJson()){
+                return  response()->json(["data"=>["message"=>"Sikertelen belépés"]],401);
+            }
+        }
+    }
+    public function logout(Request $request)
+    {
+        Auth::logout();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -33,7 +54,8 @@ class UserController extends Controller
         $newuser->username = $request->validated()['username'];
         $newuser->password = Hash::make($request->validated()['password']);
         $newuser->save();
-        return $newuser;
+        return new userResource($newuser);
+      
     }
 
     /**
@@ -44,8 +66,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $data = User::findOrFail('id', $id);
-        return $data;
+        $data = User::findOrFail($id);
+        return new userResource($data);
     }
 
     /**
@@ -57,11 +79,11 @@ class UserController extends Controller
      */
     public function update(UserRequest $request, $id)
     {
-        $data = User::findOrFail('id', $id);
+        $data = User::findOrFail($id);
         $data->username = $request->validated()['username'];
         $data->password = Hash::make($request->validated()['password']);
         $data->save();
-        return $data;
+        return new userResource($data);
     }
 
     /**
@@ -72,6 +94,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $data = User::findOrFail('id', $id)->delete();
+        $data = User::findOrFail($id)->destroy();
     }
 }

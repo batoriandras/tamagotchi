@@ -15,8 +15,8 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-         <Router-link class="nav-link active" aria-current="page" to="/">Log out</Router-link>
-        </li>
+              <button class="btn btn-danger nav-link active" aria-current="page" @click="logout">Log out</button>
+            </li>
         </ul>
     </div>
   </div>
@@ -28,9 +28,19 @@ nav{
     font-weight: bold;
 }
 Router-link{
-    
     text-decoration: none;
     color:black;
     font-size: larger;
 }
 </style>
+<script setup>
+import {http} from '../helper/http.js';
+import {useRouter} from "vue-router";
+const router = useRouter();
+async function logout(){
+  const response = await http.get('logout');
+  localStorage.clear();
+  router.push({name:'login'});
+}
+
+</script>

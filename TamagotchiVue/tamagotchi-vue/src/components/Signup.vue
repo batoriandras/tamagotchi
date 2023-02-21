@@ -13,8 +13,8 @@
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password" class="form-control" v-model="newUser.password">
                     <br>
-                    <button class="btn btn-danger text-dark" type="submit">Sign Up</button>
-                    <button class="btn btn-danger text-dark" @click="redirect()">Login</button>
+                    <button class="btn btn-warning text-dark" type="submit">Sign Up</button>
+                    <button class="btn btn-warning text-dark" @click="redirect()">Login</button>
                 </form>
             </div>
         </div>
@@ -72,5 +72,6 @@ label {
 }
 .btn{
     margin: 10px;
+    border-radius: 40px;
 }
 </style>
