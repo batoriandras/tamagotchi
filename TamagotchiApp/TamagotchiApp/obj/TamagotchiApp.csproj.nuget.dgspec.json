@@ -1,6 +1,22 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "D:\\tamagotchi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {}
+  },
+  "projects": {
+    "D:\\tamagotchi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\tamagotchi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
+        "projectName": "TamagotchiApp",
+        "projectPath": "D:\\tamagotchi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
+        "packagesPath": "C:\\Users\\bator\\.nuget\\packages\\",
+        "outputPath": "D:\\tamagotchi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
     "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {}
   },
   "projects": {
@@ -15,10 +31,11 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 91163d1321a55386221ef58853757c9ef6f03c59
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows7.0"
+          "net5.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -45,7 +62,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +75,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+>>>>>>> 91163d1321a55386221ef58853757c9ef6f03c59
         }
       }
     }
