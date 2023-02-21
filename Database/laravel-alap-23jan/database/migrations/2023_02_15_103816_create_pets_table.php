@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreignId('animals_id')->constrained("animals","id");
             $table->string('petname');
             $table->integer('hunger');
+            $table->dateTime('hungerdate');
             $table->integer('thirst');
             $table->integer('mood');
             $table->date('birth');

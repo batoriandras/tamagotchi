@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {}
+    "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {}
   },
   "projects": {
-    "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {
+    "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
+        "projectUniqueName": "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
         "projectName": "TamagotchiApp",
-        "projectPath": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
-        "packagesPath": "C:\\Users\\adama\\.nuget\\packages\\",
-        "outputPath": "E:\\GIT PROJEKTEK\\TAMAGOTCHI\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\obj\\",
+        "projectPath": "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
+        "packagesPath": "C:\\Users\\KiKi\\.nuget\\packages\\",
+        "outputPath": "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KiKi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

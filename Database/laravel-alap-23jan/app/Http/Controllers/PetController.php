@@ -29,10 +29,17 @@ class PetController extends Controller
      */
     public function store(PetRequest $request)
     {
-        //$newpet = new Pet();
-        //$newpet->petname = $request->validated()['username'];
-        //$newpet->save();
-        //return $newpet;
+        $newpet = new Pets();
+        $newpet->users_id = Auth::id();
+        $newpet->animals_id = $request->validated()['animal'];
+        $newpet->petname = $request->validated()['username'];
+        $newpet->hungerdate = dateTime('Y-m-d H:i:s');
+        $newpet->hunger = 100;
+        $newpet->thirst = 100;
+        $newpet->mood = 100;
+        $newpet->birth = date('Y-m-d');
+        $newpet->save();
+        return $newpet;
     }
 
     /**
@@ -43,7 +50,7 @@ class PetController extends Controller
      */
     public function show($id)
     {
-        $data = Pet::findOrFail('id', $id);
+        $data = Pets::findOrFail('id', $id);
         return $data;
     }
 
@@ -54,9 +61,11 @@ class PetController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PetRequest $request, $id)
     {
-        
+        $data = Pets::findOrFail('id',$id);
+        $data->petname = $request->validated()['petname'];
+        $data->hungerdate = dateTime('Y-m-d H:i:s');
     }
 
     /**
@@ -67,6 +76,6 @@ class PetController extends Controller
      */
     public function destroy($id)
     {
-        $data = Pet::findOrFail('id', $id)->delete();
+        $data = Pets::findOrFail('id', $id)->delete();
     }
 }

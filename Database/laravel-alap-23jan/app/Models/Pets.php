@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pets extends Model
 {
+    protected $casts = [
+        'birth' => 'date_format:d/m/yyyy'
+    ];
     protected $table = "pets";
     public function PetsAnimal(){
         return $this->belongsTo(Animals::class, "animals_id", "id");
