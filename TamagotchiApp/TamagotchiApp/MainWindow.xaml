@@ -14,26 +14,18 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label FontWeight="Bold" FontSize="16" Width="120" Content="Hunger" Grid.Row="0" Grid.Column="0"/>
-        <ProgressBar Width="120" x:Name="hunger" Grid.Row="0" Grid.Column="0" Minimum="0" Maximum="100" Value="100" Height="10" ValueChanged="hunger_ValueChanged"/>
-        <Label FontWeight="Bold" FontSize="16" Width="120" Content="Thirst" Grid.Row="0" Grid.Column="1"/>
-        <ProgressBar Width="120" x:Name="thirst" Grid.Row="0" Grid.Column="1" Minimum="0" Maximum="100" Value="100" Height="10"/>
-        <Label FontWeight="Bold" FontSize="16" Width="120" Content="Mood" Grid.Row="0" Grid.Column="2"/>
-        <ProgressBar Width="120" x:Name="mood" Grid.Row="0" Grid.Column="2" Minimum="0" Maximum="100" Value="100" Height="10"/>
-        <Button x:Name="eat" Width="90" Margin="3" Background="Coral" Grid.Column="5" Grid.Row="3" Content="Food" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
-        <Button x:Name="drink" Width="90" Margin="3" Background="DodgerBlue" Grid.Column="5" Grid.Row="4" Content="Drink" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Click="drink_Click"/>
-        <Button x:Name="play" Width="90" Margin="3" Background="Orange" Grid.Column="5" Grid.Row="5" Content="Play" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Click="play_Click"/>
+        <Label Content="Welcome to the Admin interface" Grid.Row="0" Grid.ColumnSpan="3" FontSize="20" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Opacity="0.6"/>
+        <StackPanel Grid.Row="1" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label Background="White" MinHeight="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Opacity="0.7"  Height="325" >
+                
+            </Label>
+        </StackPanel>
     </Grid>
 </Window>

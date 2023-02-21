@@ -1,4 +1,13 @@
+<script setup>
+import NavBar from '../components/NavBar.vue'
+import {http} from '../helper/http.js'
+async function deleteAcc(id){
+    const response = await http.delete('delete/' + id); 
+}
+</script>
+
 <template>
+    <NavBar />
     <div class="container">
         <div class="row">
         <div class="col">
@@ -8,12 +17,7 @@
     </div>
     </div>
 </template>
-<script setup>
 
-async function deleteAcc(id){
-    const response = await http.delete('delete/' + id);
-}
-</script>
 <style scoped>
 div{
     text-align: center;

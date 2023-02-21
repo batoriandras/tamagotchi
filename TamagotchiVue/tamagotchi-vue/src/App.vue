@@ -4,13 +4,12 @@
   export default{
     components:{
       RouterView,
-      NavBar
+      
     }
   }
 </script>
 
 <template>
-  <NavBar />
   <RouterView />
 </template>
 

@@ -14,12 +14,15 @@
                     <input type="password" name="password" id="password" class="form-control" v-model="newUser.password">
                     <br>
                     <button class="btn btn-danger text-dark" type="submit">Sign Up</button>
+                    <button class="btn btn-danger text-dark" @click="redirect()">Login</button>
                 </form>
             </div>
         </div>
 </template>
 
 <script>
+import { resolveDirective } from 'vue';
+
 
 export default{
 data(){
@@ -29,6 +32,11 @@ data(){
             password: ""
         }
     }
+},
+methods:{
+   redirect(){
+    this.$router.push({name: 'login'});
+   }     
 },
 emits:[
         "registerUser"
@@ -61,5 +69,8 @@ input {
 label {
     padding: 10px;
     font-size: larger;
+}
+.btn{
+    margin: 10px;
 }
 </style>
