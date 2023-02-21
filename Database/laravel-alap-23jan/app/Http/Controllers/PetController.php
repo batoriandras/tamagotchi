@@ -50,7 +50,7 @@ class PetController extends Controller
      */
     public function show($id)
     {
-        $data = Pets::findOrFail('id', $id);
+        $data = Pets::where('id', $id);
         return $data;
     }
 

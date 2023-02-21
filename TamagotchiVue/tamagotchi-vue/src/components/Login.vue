@@ -33,15 +33,16 @@ export default{
     }
 },
 methods:{
-        async checkUser(){
-            const response = await http.get('users');
-            response.data.data.forEach(element => {
-                if (element.username == this.theUser.username) {
-                    this.$router.push({name: 'pet'});
-                }
-            });
+    async login(){
+        const response = await http.post('login', userData);
+        if(response.status !== 200){
+            error.value = response.statusText
+        }else{
+            localStorage.setItem('token',response.data.data.token);
+            router.push({name: 'index'});
         }
     }
+}
 }
 </script>
 <style scoped>
