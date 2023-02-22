@@ -3,13 +3,8 @@ build_property.TargetFramework = net5.0-windows
 build_property.TargetPlatformMinVersion = 7.0
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
-build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = TamagotchiApp
-<<<<<<< HEAD
-build_property.ProjectDir = D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\
-=======
-build_property.ProjectDir = E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\
->>>>>>> 91163d1321a55386221ef58853757c9ef6f03c59
+build_property.ProjectDir = D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\
