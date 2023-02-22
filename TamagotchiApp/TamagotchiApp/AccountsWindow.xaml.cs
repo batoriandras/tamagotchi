@@ -22,12 +22,7 @@ namespace TamagotchiApp
         public AccountsWindow()
         {
             InitializeComponent();
-            RestApiHandler handler = new RestApiHandler("https://localhost:8881");
-            Account[] users = handler.GetUser("/api/users");
-            for (int i = 0; i < users.Length; i++)
-            {
-                list.Items.Add(users[i].username + " - " + users[i].password);
-            }
+            
         }
     }
 }

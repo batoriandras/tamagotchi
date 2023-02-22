@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
-3-313675000
+3255123907
 
-9327577462
+9-1290272211
 193-1891726104
-AccountsWindow.xaml;MainWindow.xaml;NewAnimal.xaml;
+AccountsWindow.xaml;LoginWindow.xaml;MainWindow.xaml;
 
-False
+True
 

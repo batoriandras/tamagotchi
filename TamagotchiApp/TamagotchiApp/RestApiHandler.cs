@@ -31,5 +31,18 @@ namespace TamagotchiApp
             }
             return retval;
         }
+        public Account PostUser(string path,Dictionary<string,string> values)
+        {
+
+            FormUrlEncodedContent content = new FormUrlEncodedContent(values);
+            Account retval = null;
+            HttpResponseMessage response = client.PostAsync(path, content).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                string str = response.Content.ReadAsStringAsync().Result;
+                retval = JsonSerializer.Deserialize<Account>(str);
+            }
+            return retval;
+        }
     }
 }

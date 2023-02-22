@@ -69,6 +69,7 @@ class PetController extends Controller
         return new petResource($data);
     }
 
+
     /**
      * Remove the specified resource from storage.
      *

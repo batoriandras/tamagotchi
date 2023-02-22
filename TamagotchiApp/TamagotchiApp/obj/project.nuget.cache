@@ -4,12 +4,5 @@
   "success": true,
   "projectFilePath": "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

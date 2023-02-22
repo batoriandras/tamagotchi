@@ -8,8 +8,12 @@ namespace TamagotchiApp
 {
     class Account
     {
-        public int id { get; private set; }
-        public string username { get; private set; }
-        public string password { get; private set; }
+        public class AccountData
+        {
+            public string token { get; set; }
+            public int userid { get; set; }
+        }
+        public AccountData data { get; set; }
     }
+    
 }
