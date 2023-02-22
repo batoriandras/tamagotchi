@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\
 TamagotchiApp
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
-2-216653475
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
+3-313675000
 
-4-1844475548
+7-1391533526
 193-1891726104
-LoginWindow.xaml;MainWindow.xaml;
+AccountsWindow.xaml;MainWindow.xaml;NewAnimal.xaml;
 
-False
+True
 

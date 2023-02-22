@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,32 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Threading;
 
 namespace TamagotchiApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for NewAnimal.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NewAnimal : Window
     {
-        public MainWindow()
+        public NewAnimal()
         {
             InitializeComponent();
-            
-            
-        }
-
-        private void NewAnimal_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void AllAccount_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

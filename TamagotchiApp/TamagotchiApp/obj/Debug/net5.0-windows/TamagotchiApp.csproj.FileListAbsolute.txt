@@ -19,6 +19,20 @@ E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\ref\TamagotchiApp.dll
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.genruntimeconfig.cache
-E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.g.cs
-E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.baml
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.g.cs
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AnimalAdd.g.cs
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\NewAnimal.g.cs
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.baml
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AnimalAdd.baml
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\NewAnimal.baml
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.g.cs
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\MainWindow.g.cs
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\NewAnimal.g.cs
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\App.g.cs
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp_MarkupCompile.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp_MarkupCompile.lref
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\ref\TamagotchiApp.dll
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb

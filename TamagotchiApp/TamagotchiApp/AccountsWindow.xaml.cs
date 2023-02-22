@@ -15,13 +15,19 @@ using System.Windows.Shapes;
 namespace TamagotchiApp
 {
     /// <summary>
-    /// Interaction logic for AnimalAdd.xaml
+    /// Interaction logic for AccountsWindow.xaml
     /// </summary>
-    public partial class AnimalAdd : Window
+    public partial class AccountsWindow : Window
     {
-        public AnimalAdd()
+        public AccountsWindow()
         {
             InitializeComponent();
+            RestApiHandler handler = new RestApiHandler("https://localhost:8881");
+            Account[] users = handler.GetUser("/api/users");
+            for (int i = 0; i < users.Length; i++)
+            {
+                list.Items.Add(users[i].username + " - " + users[i].password);
+            }
         }
     }
 }
