@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace TamagotchiApp
 {
     /// <summary>
-    /// Interaction logic for NewAnimal.xaml
+    /// Interaction logic for AddNewAnimal.xaml
     /// </summary>
-    public partial class NewAnimal : Window
+    public partial class AddNewAnimal : Window
     {
-        public NewAnimal()
+        public AddNewAnimal()
         {
             InitializeComponent();
+        }
+
+        private void newAnimal_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
