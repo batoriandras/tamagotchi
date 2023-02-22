@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TamagotchiApp"
         mc:Ignorable="d"
         Title="AccountsWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF851E1E">
+        <ListBox x:Name="list" Width="500" Height="200"/>
     </Grid>
 </Window>

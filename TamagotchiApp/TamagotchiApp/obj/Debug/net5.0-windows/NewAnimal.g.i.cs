@@ -53,7 +53,7 @@ namespace TamagotchiApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TamagotchiApp;V1.0.0.0;component/newanimal.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TamagotchiApp;component/newanimal.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\NewAnimal.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

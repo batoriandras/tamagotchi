@@ -26,6 +26,7 @@ namespace TamagotchiApp
         {
             InitializeComponent();
             
+            
         }
 
         private void NewAnimal_Click(object sender, RoutedEventArgs e)

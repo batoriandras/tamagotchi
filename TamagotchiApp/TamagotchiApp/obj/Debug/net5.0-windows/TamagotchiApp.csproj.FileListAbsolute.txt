@@ -19,6 +19,10 @@ E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\ref\TamagotchiApp.dll
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.genruntimeconfig.cache
-E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.g.cs
-E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.baml
 E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.g.cs
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AnimalAdd.g.cs
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\NewAnimal.g.cs
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.baml
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AnimalAdd.baml
+E:\GIT PROJEKTEK\TAMAGOTCHI\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\NewAnimal.baml
