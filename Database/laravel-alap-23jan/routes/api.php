@@ -32,6 +32,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/pet/{id}', [PetController::class, 'show']);
     Route::post('/newpet', [PetController::class, 'store']);
     Route::put('/editpet/{id}', [PetController::class, 'update']);
+    Route::put('/editpetstat/{id}', [PetController::class, 'updateStat'])
     Route::delete('/delete/{id}', [PetController::class, 'destroy']);
 });
 
