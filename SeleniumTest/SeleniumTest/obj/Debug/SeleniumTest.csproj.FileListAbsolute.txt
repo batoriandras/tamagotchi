@@ -1,0 +1,14 @@
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.csproj.AssemblyReference.cache
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.csproj.SuggestedBindingRedirects.cache
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.csproj.CoreCompileInputs.cache
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\selenium-manager\linux\selenium-manager
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\selenium-manager\macos\selenium-manager
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\SeleniumTest.exe.config
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\SeleniumTest.exe
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\SeleniumTest.pdb
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\WebDriver.dll
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\WebDriver.Support.dll
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.csproj.CopyComplete
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.exe
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.pdb

@@ -22,6 +22,7 @@ namespace TamagotchiApp
         public AccountsWindow()
         {
             InitializeComponent();
+            
         }
     }
 }

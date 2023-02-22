@@ -69,6 +69,17 @@ class PetController extends Controller
         return new petResource($data);
     }
 
+    public function updateStat($id)
+    {
+        $data = Pets::findOrFail($id);
+        $newpet->hunger = int;
+        $newpet->thirst = int;
+        $newpet->mood = int;
+        $data->save();
+        return new petResource($data);
+    }
+
+
     /**
      * Remove the specified resource from storage.
      *

@@ -10,7 +10,11 @@
     <Compile Update="AccountsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="NewAnimal.xaml.cs">
+=======
+    <Compile Update="LoginWindow.xaml.cs">
+>>>>>>> d04bc4ac41ed5b31b6aa31b742893583953e323f
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,10 +22,13 @@
     <Page Update="AccountsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+<<<<<<< HEAD
+=======
+    <Page Update="LoginWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="NewAnimal.xaml">
+>>>>>>> d04bc4ac41ed5b31b6aa31b742893583953e323f
+    <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
