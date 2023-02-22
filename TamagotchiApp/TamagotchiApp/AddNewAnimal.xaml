@@ -1,11 +1,11 @@
-﻿<Window x:Class="TamagotchiApp.NewAnimal"
+﻿<Window x:Class="TamagotchiApp.AddNewAnimal"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TamagotchiApp"
         mc:Ignorable="d"
-        Title="NewAnimal" Height="450" Width="800">
+        Title="AddNewAnimal" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
         <Label Content="Add new animal" Grid.Row="0" Grid.ColumnSpan="3" FontSize="20" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Opacity="0.6"/>
         <Button x:Name="AddAnimal" FontSize="25" FontWeight="Bold" Content="Add new Animal" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Width="250" Height="60" Background="Orange" Click="AddAnimal_Click"/>
-        <TextBox x:Name="username" Grid.Column="0" Grid.Row="1" Width="200" Height="40"/>
-        <TextBox x:Name="password" Grid.Column="1" Grid.Row="1" Width="200" Height="40"/>
+        <TextBox x:Name="animaltype" Grid.Column="0" Grid.Row="1" Width="200" Height="40"/>
+        <TextBox x:Name="animalimg" Grid.Column="1" Grid.Row="1" Width="200" Height="40"/>
     </Grid>
 </Window>

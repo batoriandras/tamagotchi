@@ -31,7 +31,10 @@ namespace TamagotchiApp
 
         private void NewAnimal_Click(object sender, RoutedEventArgs e)
         {
-
+            AddNewAnimal ana = new AddNewAnimal();
+            ana.Show();
+            Hide();
+            ana.Closed += (_, _) => Close();
         }
 
         private void AllAccount_Click(object sender, RoutedEventArgs e)

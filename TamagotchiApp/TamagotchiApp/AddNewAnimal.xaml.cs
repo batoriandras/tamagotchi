@@ -15,17 +15,26 @@ using System.Windows.Shapes;
 namespace TamagotchiApp
 {
     /// <summary>
-    /// Interaction logic for NewAnimal.xaml
+    /// Interaction logic for AddNewAnimal.xaml
     /// </summary>
-    public partial class NewAnimal : Window
+    public partial class AddNewAnimal : Window
     {
-        public NewAnimal()
+        public AddNewAnimal()
         {
             InitializeComponent();
         }
 
         private void AddAnimal_Click(object sender, RoutedEventArgs e)
         {
+            Dictionary<string, string> values = new Dictionary<string, string>
+            {
+                {"animaltype", animaltype.Text},
+                {"animalimg", animalimg.Text}
+            };
+
+            RestApiHandler handler = new RestApiHandler("http://localhost:8881/api/");
+            Animal newanimal = handler.PostAnimal("newanimal", values);
+
 
         }
     }
