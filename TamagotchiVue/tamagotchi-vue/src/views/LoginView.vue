@@ -4,27 +4,13 @@ import Login from '../components/Login.vue'
 export default{
     components:{
         Login
-    },
-    data(){
-return{
-    pets: []
-}
-},
-methods:{
-    async allpet(){
-            const response = await http.get('pets');
-            this.pets = response.data.data;
-},
-mounted(){
-this.allpet()
-}
-}
+    }
 }
 </script>
 
 <template>
     <div class="container-fluid">
-        <Login :pets="pets"/>
+        <Login/>
     </div>
 </template>
 <style scoped>

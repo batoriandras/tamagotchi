@@ -24,7 +24,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user/{id}', [UserController::class, 'show']);
     Route::post('/newuser', [UserController::class, 'store']);
     Route::put('/edituser/{id}', [UserController::class, 'update']);
-    Route::delete('/delete/{id}', [UserController::class, 'destroy']);
+    Route::delete('/deleteuser/{id}', [UserController::class, 'destroy']);
 });
 
 Route::middleware('auth:sanctum')->group(function () {
@@ -33,7 +33,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/newpet', [PetController::class, 'store']);
     Route::put('/editpet/{id}', [PetController::class, 'update']);
     Route::put('/editpetstat/{id}', [PetController::class, 'updateStat']);
-    Route::delete('/delete/{id}', [PetController::class, 'destroy']);
+    Route::delete('/deletepet/{id}', [PetController::class, 'destroy']);
 });
 
 Route::middleware('auth:sanctum')->group(function () {

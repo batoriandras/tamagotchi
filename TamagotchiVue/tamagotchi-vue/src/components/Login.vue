@@ -25,9 +25,9 @@
 import {reactive,ref} from 'vue';
 import {http} from '../helper/http.js';
 import {useRouter} from "vue-router";
-import { defineProps } from 'vue';
-const props = defineProps({pets:Array});
-const router = useRouter()
+const pets = reactive([]);
+
+const router = useRouter();
 
 const userData = reactive({
     username: '',
@@ -36,6 +36,7 @@ const userData = reactive({
 
 const error = ref(null);
 
+
 async function login(){
     const response = await http.post('login', userData);
     if(response.status !== 200){
@@ -43,16 +44,11 @@ async function login(){
     }else{
         localStorage.setItem('token',response.data.data.token);
         localStorage.setItem('userid',response.data.data.userid);
-        if(props.pets.length != null){
-            router.push({name: 'pet'});
-        }
-        else{
-            router.push({name: 'login'});
-        }
-        
+        router.push({name:'pet'});
     }
-    
 }
+
+
 </script>
 <style scoped>
 
