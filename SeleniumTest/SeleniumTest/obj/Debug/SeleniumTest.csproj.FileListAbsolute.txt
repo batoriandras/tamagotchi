@@ -12,3 +12,4 @@ D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\WebDriver.Support.d
 D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.csproj.CopyComplete
 D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.exe
 D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\obj\Debug\SeleniumTest.pdb
+D:\tamagotchi\tamagotchi\SeleniumTest\SeleniumTest\bin\Debug\SeleniumExtras.WaitHelpers.dll
