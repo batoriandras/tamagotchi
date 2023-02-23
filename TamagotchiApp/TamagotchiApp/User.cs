@@ -10,9 +10,13 @@ namespace TamagotchiApp
     {
         public class UserData
         {
-            public int id { get; set; }
+            public int user_id { get; set; }
             public string username { get; set; }
         }
         public UserData data { get; set; }
+    }
+    class Users
+    {
+        public User.UserData[] data { get; set; }
     }
 }
