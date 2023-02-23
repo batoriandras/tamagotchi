@@ -1,8 +1,13 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\adama\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\adama\\.nuget\\packages"
+=======
+      "C:\\Users\\bator\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\bator\\.nuget\\packages"
+>>>>>>> edf951680fe21509cc959ab8d5d224966c53c277
     ]
   }
 }

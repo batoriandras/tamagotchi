@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\
+=======
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\
+>>>>>>> edf951680fe21509cc959ab8d5d224966c53c277
 TamagotchiApp
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+<<<<<<< HEAD
 E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
+=======
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\App.xaml
+>>>>>>> edf951680fe21509cc959ab8d5d224966c53c277
 4-1841466314
 
 101129105454

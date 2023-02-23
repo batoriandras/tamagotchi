@@ -54,6 +54,7 @@ D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-w
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.genruntimeconfig.cache
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache
+<<<<<<< HEAD
 E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.exe
 E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.deps.json
 E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.runtimeconfig.json
@@ -82,3 +83,33 @@ E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5
 E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\ref\TamagotchiApp.dll
 E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb
 E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.genruntimeconfig.cache
+=======
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.exe
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.deps.json
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.runtimeconfig.json
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.runtimeconfig.dev.json
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.dll
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.pdb
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.g.cs
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AddNewAnimal.g.cs
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.g.cs
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\MainWindow.g.cs
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\App.g.cs
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp_MarkupCompile.cache
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp_MarkupCompile.lref
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.baml
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AddNewAnimal.baml
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.baml
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\MainWindow.baml
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.g.resources
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.AssemblyInfoInputs.cache
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.AssemblyInfo.cs
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.CoreCompileInputs.cache
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.dll
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\refint\TamagotchiApp.dll
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.genruntimeconfig.cache
+D:\tamagotchi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\ref\TamagotchiApp.dll
+>>>>>>> edf951680fe21509cc959ab8d5d224966c53c277
