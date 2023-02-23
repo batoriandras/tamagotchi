@@ -38,5 +38,13 @@ namespace TamagotchiApp
             Animal newanimal = handler.PostAnimal("newanimal", values);
 
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow(handler);
+            main.Show();
+            Hide();
+            main.Closed += (_, _) => Close();
+        }
     }
 }

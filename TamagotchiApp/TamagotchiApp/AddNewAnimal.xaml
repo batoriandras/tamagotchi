@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TamagotchiApp"
         mc:Ignorable="d"
         Title="AddNewAnimal" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFA6E65A">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -16,9 +16,12 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Add new animal" Grid.Row="0" Grid.ColumnSpan="3" FontSize="20" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Opacity="0.6"/>
-        <Button x:Name="AddAnimal" FontSize="25" FontWeight="Bold" Content="Add new Animal" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Width="250" Height="60" Background="Orange" Click="AddAnimal_Click"/>
+        <Label Content="Add new animal" Grid.Row="0" Grid.ColumnSpan="3" FontSize="20" FontWeight="Bold" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Opacity="0.6"/>
+        <Button x:Name="AddAnimal" FontSize="25" FontWeight="Bold" Content="Add new Animal" Grid.Column="1" Grid.Row="2" Width="230" Height="50" Background="Orange" Click="AddAnimal_Click"/>
+        <Label Content="Animal type name" Grid.Column="0" Grid.Row="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
         <TextBox x:Name="animaltype" Grid.Column="0" Grid.Row="1" Width="200" Height="40"/>
+        <Label Content="Picture name" Grid.Column="1" Grid.Row="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
         <TextBox x:Name="animalimg" Grid.Column="1" Grid.Row="1" Width="200" Height="40"/>
+        <Button x:Name="back" FontSize="25" FontWeight="Bold" Content="Go back" Grid.Column="0" Grid.Row="2" Width="230" Height="50" Background="Orange" Click="back_Click"/>
     </Grid>
 </Window>

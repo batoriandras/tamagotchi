@@ -54,3 +54,31 @@ D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-w
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.genruntimeconfig.cache
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.exe
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.deps.json
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.runtimeconfig.json
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.runtimeconfig.dev.json
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.dll
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\ref\TamagotchiApp.dll
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.pdb
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.g.cs
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AddNewAnimal.g.cs
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.g.cs
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\MainWindow.g.cs
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\App.g.cs
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp_MarkupCompile.cache
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp_MarkupCompile.lref
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.baml
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AddNewAnimal.baml
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.baml
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\MainWindow.baml
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.g.resources
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.AssemblyInfoInputs.cache
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.AssemblyInfo.cs
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.CoreCompileInputs.cache
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.dll
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\ref\TamagotchiApp.dll
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb
+E:\GIT PROJEKTEK\Új mappa\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.genruntimeconfig.cache

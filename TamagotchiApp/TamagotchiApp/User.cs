@@ -10,7 +10,7 @@ namespace TamagotchiApp
     {
         public class UserData
         {
-            public int user_id { get; set; }
+            public int userid { get; set; }
             public string username { get; set; }
         }
         public UserData data { get; set; }
