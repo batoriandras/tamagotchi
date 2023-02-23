@@ -29,17 +29,17 @@ namespace TamagotchiApp
 
         private void showallacc_Click(object sender, RoutedEventArgs e)
         {
-            User[] users = handler.GetUsers("users");
-            for (int i = 0; i < users.Length; i++)
+            Users users = handler.GetUsers("users");
+            for (int i = 0; i < users.data.Length; i++)
             {
-                list.Items.Add($"Username: {users[i].data.username} - UserId: {users[i].data.id}");
+                list.Items.Add($"Username: {users.data[i].username} - UserId: {users.data[i].user_id}");
             }
         }
 
         private void Deleteaccount_Click(object sender, RoutedEventArgs e)
         {
             int id = int.Parse(accountid.Text);
-            User user = handler.DeleteUser("deleteuser/" + id);
+            handler.DeleteUser($"deleteuser/{id}");
         }
     }
 }

@@ -7,6 +7,7 @@ use App\Http\Resources\petResource;
 use App\Models\Pets;
 use App\Http\Requests\PetRequest;
 use App\Http\Requests\PetStatRequest;
+use Illuminate\Support\Facades\Auth;
 
 class PetController extends Controller
 {
@@ -18,7 +19,6 @@ class PetController extends Controller
     public function index()
     {
         $data = auth()->user()->UsersPets;
-        ddd($data);
         return petResource::collection($data);
     }
 
@@ -32,12 +32,13 @@ class PetController extends Controller
     {
         $newpet = new Pets();
         $newpet->users_id = Auth::id();
-        $newpet->animals_id = $request->validated()['animal'];
-        $newpet->petname = $request->validated()['username'];
-        $newpet->hungerdate = dateTime('Y-m-d H:i:s');
+        $newpet->animals_id = $request->validated()['animals_id'];
+        $newpet->petname = $request->validated()['petname'];
+        /*$newpet->hungerdate = datetime('Y-m-d H:i:s');*/
         $newpet->hunger = 100;
         $newpet->thirst = 100;
         $newpet->mood = 100;
+        $newpet->fatigue = 80;
         $newpet->birth = date('Y-m-d');
         $newpet->save();
         return new petResource($newpet);
@@ -66,7 +67,7 @@ class PetController extends Controller
     {
         $data = Pets::findOrFail($id);
         $data->petname = $request->validated()['petname'];
-        $data->hungerdate = dateTime('Y-m-d H:i:s');
+        /*$data->hungerdate = dateTime('Y-m-d H:i:s');*/
         $data->save();
         return new petResource($data);
     }

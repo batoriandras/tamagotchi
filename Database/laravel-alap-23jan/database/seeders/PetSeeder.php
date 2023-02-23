@@ -16,7 +16,7 @@ class PetSeeder extends Seeder
     public function run()
     {
         DB::table('pets')->insert([
-            ["users_id"=>1,"animals_id"=>1, "petname" =>"peti","hungerdate" =>"2022-01-08 12:06:20","hunger" =>100,"thirst" =>50,"mood" =>75,"fatigue" =>80,"birth" =>"2015-01-08"]
+            ["users_id"=>1,"animals_id"=>1, "petname" =>"peti", "hunger" =>100,"thirst" =>50,"mood" =>75,"fatigue" =>80,"birth" =>"2015-01-08"]
         ]);
     }
 }
