@@ -26,7 +26,8 @@ namespace TamagotchiApp
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mw = new MainWindow();
+            
+
             Dictionary<string, string> values = new Dictionary<string, string>
             {
                 {"username", username.Text},
@@ -34,6 +35,7 @@ namespace TamagotchiApp
             };
 
             RestApiHandler handler = new RestApiHandler("http://localhost:8881/api/");
+            MainWindow mw = new MainWindow(handler);
             Account users = handler.PostUser("login",values);
 
             if (users.data.token != null)

@@ -33,7 +33,6 @@ D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-w
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.dll
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\ref\TamagotchiApp.dll
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\bin\Debug\net5.0-windows\TamagotchiApp.pdb
-D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AccountsWindow.g.cs
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\AddNewAnimal.g.cs
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\LoginWindow.g.cs
@@ -54,3 +53,4 @@ D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-w
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\ref\TamagotchiApp.dll
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.pdb
 D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.genruntimeconfig.cache
+D:\projektek\tamagochi\tamagotchi\TamagotchiApp\TamagotchiApp\obj\Debug\net5.0-windows\TamagotchiApp.csproj.AssemblyReference.cache

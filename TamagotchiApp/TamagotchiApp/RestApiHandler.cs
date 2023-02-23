@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace TamagotchiApp
 {
-    class RestApiHandler
+    internal class RestApiHandler
     {
         HttpClient client = new HttpClient();
 
@@ -41,16 +41,16 @@ namespace TamagotchiApp
             {
                 string str = response.Content.ReadAsStringAsync().Result;
                 retval = JsonSerializer.Deserialize<Account>(str);
-
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", retval.data.token);
+
             }
             return retval;
         }
         public Animal PostAnimal(string path, Dictionary<string, string> values)
         {
-
             FormUrlEncodedContent content = new FormUrlEncodedContent(values);
             Animal retval = null;
+            
             HttpResponseMessage response = client.PostAsync(path, content).Result;
             if (response.IsSuccessStatusCode)
             {

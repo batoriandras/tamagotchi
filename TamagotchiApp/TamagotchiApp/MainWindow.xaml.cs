@@ -20,18 +20,18 @@ namespace TamagotchiApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    partial class MainWindow : Window
     {
-        public MainWindow()
+        RestApiHandler handler;
+        public MainWindow(RestApiHandler handler)
         {
             InitializeComponent();
-            
-            
+            this.handler = handler;
         }
 
         private void NewAnimal_Click(object sender, RoutedEventArgs e)
         {
-            AddNewAnimal ana = new AddNewAnimal();
+            AddNewAnimal ana = new AddNewAnimal(handler);
             ana.Show();
             Hide();
             ana.Closed += (_, _) => Close();

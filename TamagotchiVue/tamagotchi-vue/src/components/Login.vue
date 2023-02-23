@@ -43,7 +43,13 @@ async function login(){
     }else{
         localStorage.setItem('token',response.data.data.token);
         localStorage.setItem('userid',response.data.data.userid);
-        router.push({name: 'pet'});
+        if(props.pets.length != null){
+            router.push({name: 'pet'});
+        }
+        else{
+            router.push({name: 'login'});
+        }
+        
     }
     
 }

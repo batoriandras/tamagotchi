@@ -18,6 +18,7 @@ class PetController extends Controller
     public function index()
     {
         $data = auth()->user()->UsersPets;
+        ddd($data);
         return petResource::collection($data);
     }
 

@@ -17,11 +17,13 @@ namespace TamagotchiApp
     /// <summary>
     /// Interaction logic for AddNewAnimal.xaml
     /// </summary>
-    public partial class AddNewAnimal : Window
+    partial class AddNewAnimal : Window
     {
-        public AddNewAnimal()
+        RestApiHandler handler;
+        public AddNewAnimal(RestApiHandler handler)
         {
             InitializeComponent();
+            this.handler = handler;
         }
 
         private void AddAnimal_Click(object sender, RoutedEventArgs e)
@@ -32,9 +34,8 @@ namespace TamagotchiApp
                 {"animalimg", animalimg.Text}
             };
 
-            RestApiHandler handler = new RestApiHandler("http://localhost:8881/api/");
+            
             Animal newanimal = handler.PostAnimal("newanimal", values);
-
 
         }
     }
