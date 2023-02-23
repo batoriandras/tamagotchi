@@ -24,7 +24,7 @@ class AnimalRequest extends FormRequest
     public function rules()
     {
         return [
-            'animaltype' => ['required', 'min:2', 'max:50'],
+            'animaltype' => ['required', 'min:1', 'max:50'],
             'animalimg' => ['required', 'min:6']
         ];
     }

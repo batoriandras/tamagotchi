@@ -5,15 +5,16 @@ export default{
         return{
             animaltypes: {},
             pet_name: '',
-            animal_type: '',
+            animal_type: null,
             newpet: {
-                user_id: '',
-                animals_id: '',
+                user_id: null,
+                animals_id: null,
                 petname: '',
                 hunger: 50,
                 thirst: 50,
                 mood: 50,
-                fatigue: 50
+                fatigue: 50,
+                birth: null
             }
         }
     },
@@ -22,11 +23,12 @@ export default{
             const response = await http.get('animals');
             this.animaltypes = response.data.data;
         },
-        sendAnimal(){
+        async sendAnimal(){
             this.newpet.petname = this.pet_name;
             this.newpet.animals_id = this.animal_type;
-            console.log(this.newpet.petname);
-            console.log(this.newpet.animals_id);
+            this.newpet.user_id = localStorage.getItem('userid');
+            const response = await http.post('newpet', this.newpet);
+            console.log(this.newpet);
         },
         onChange(event){
             this.animal_type = event.target.value;
@@ -47,7 +49,7 @@ export default{
 
         <label for="type" class="form-label">Choose an animal type</label>
 
-        <select name="animal" id="type" v-model="this.animal_type" @change="onChange($event)">
+        <select name="animaltype" id="type" v-model="this.animal_type" @change="onChange($event)">
             <option  v-for="item in this.animaltypes" :value="item.id">
             {{ item.animaltype }}
             </option>
