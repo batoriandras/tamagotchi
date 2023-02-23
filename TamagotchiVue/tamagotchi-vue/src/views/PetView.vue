@@ -8,7 +8,7 @@
     </div>
     <div class="pet">
         <Pet :animal="animal"/>
-        <PetAction />
+        <PetAction/>
     </div>
 </div>
 </template>
