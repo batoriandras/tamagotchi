@@ -1,11 +1,27 @@
-<script setup>
+<script>
 import {http} from '../helper/http.js'
 import NavBar from "../components/NavBar.vue"
 import { useRouter } from 'vue-router';
 const router = useRouter();
-async function deleteAcc(){
-    const response = await http.delete('deleteuser/' + localStorage.getItem('userid'));
-    router.push({name: 'login'});
+export default{
+    data(){
+        return{
+            user: ''
+        }
+    },
+    methods:{
+        async currentUser(){
+            const response = await http.get('user/' + localStorage.getItem('userid'));
+            this.user = response.data.data.username;
+        },
+        async deleteAcc(){
+            const response = await http.delete('deleteuser/' + localStorage.getItem('userid'));
+            router.push({name: 'login'});
+        }
+    },
+    mounted(){
+        this.currentUser();
+    }
 }
 </script>
 
@@ -14,7 +30,7 @@ async function deleteAcc(){
     <div class="container">
         <div class="row">
         <div class="col">
-            <h1>Name</h1>
+            <h1>Welcome {{ this.user }}</h1>
             <button class="btn btn-danger" @click="deleteAcc()">Delete account</button>
         </div>
     </div>
