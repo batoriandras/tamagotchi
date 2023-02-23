@@ -50,7 +50,6 @@ namespace TamagotchiApp
         {
             FormUrlEncodedContent content = new FormUrlEncodedContent(values);
             Animal retval = null;
-            
             HttpResponseMessage response = client.PostAsync(path, content).Result;
             if (response.IsSuccessStatusCode)
             {

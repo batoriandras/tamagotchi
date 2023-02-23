@@ -8,21 +8,17 @@
 </template>
 <script>
 import { http } from '../helper/http'
-import moment from 'moment'
-import { VueElement } from 'vue';
 export default{
     data(){
         return{
             pet: {},
-            obj: {},
-            date: new Date()
+            obj: {}
         }
     },
     methods:{
         async petStats(){
             const response = await http.get('pet/'+localStorage.getItem('userid'));
             this.pet = response.data.data;
-            
         },
         async editHunger(){
             this.obj = {
