@@ -1,10 +1,11 @@
 <template>
     <div class="row p-3">
-        <div class="col"><button class="btn" id="eat" :disabled="{maxhunger,fatigue}"  @click="editHunger()">Eat</button></div>
-        <div class="col"><button class="btn" id="drink" :disabled="{maxthirst,fatigue}" @click="editThirst()">Drink</button></div>
-        <div class="col"><button class="btn" id="hunt" :disabled="{maxmood,fatigue}" @click="huntMood()">Hunt</button></div>
-        <div class="col"><button class="btn" id="pet" :disabled="{maxmood,fatigue}" @click="editMood()">Pet</button></div>
+        <div class="col"><button class="btn" id="eat" :disabled="maxhunger"  @click="editHunger()">Eat</button></div>
+        <div class="col"><button class="btn" id="drink" :disabled="maxthirst" @click="editThirst()">Drink</button></div>
+        <div class="col"><button class="btn" id="hunt" :disabled="fatigue" @click="huntMood()">Hunt</button></div>
+        <div class="col"><button class="btn" id="pet" :disabled="maxmood" @click="editMood()">Pet</button></div>
         <div class="col"><button class="btn" id="medicine"  @click="Medicine()">Medicine</button></div>
+        <div class="col"><button class="btn" id="sleep" :disabled="sleepy" @click="Sleep()">Sleep</button></div>
     </div>
 </template>
 <script>
@@ -74,6 +75,9 @@ export default{
         fatigue(){
             return (this.pet.fatigue == 0);
         },
+        sleepy(){
+            return (this.pet.fatigue > 60);
+        },
         RedMedicineMood(){
             if(this.pet.mood < 60 )
             {
@@ -92,12 +96,49 @@ export default{
                 return this.pet.mood - 10;
             }
         },
-
+        IncFatigue(){
+            if(this.pet.fatigue > 40 )
+            {
+            return 100;
+            }
+            else{
+                return this.pet.fatigue + 60;
+            }
+        },
+        RedHunger(){
+            if(this.pet.hunger < 60)
+            {
+            return 0;
+            }
+            else{
+                return this.pet.hunger - 60;
+            }
+        },
+        RedThirst(){
+            if(this.pet.thirst < 60)
+            {
+            return 0;
+            }
+            else{
+                return this.pet.thirst - 60;
+            }
+        },
     },
     methods:{
         async petStats(){
             const response = await http.get('pet/'+localStorage.getItem('petid'));
             this.pet = response.data.data;
+        },
+        async Sleep(){
+            this.obj = {
+                hunger: this.RedHunger,
+                thirst: this.RedThirst,
+                mood: this.pet.mood,
+                fatigue: this.IncFatigue
+            }
+            alert("Alszik egyet az Állatodat!");
+            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
+            window.location.reload();
         },
         async editHunger(){
             this.obj = {
@@ -117,7 +158,7 @@ export default{
                 mood: this.RedMedicineMood,
                 fatigue: this.RedMedicineFatigue
             }
-            alert("Megetetted az Állatodat!");
+            alert("Szurit adtál az Állatodnak!");
             const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
             window.location.reload();
         },
@@ -139,6 +180,7 @@ export default{
                 mood: this.IncMood,
                 fatigue: this.pet.fatigue
             }
+            alert("Megsimogattad az Állatodat!");
             const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
             window.location.reload();
         },

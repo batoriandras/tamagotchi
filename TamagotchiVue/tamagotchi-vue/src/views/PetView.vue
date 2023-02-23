@@ -5,8 +5,7 @@
 </div>
 <div class="container petcontainer" v-if="!isloading">
     <div class="stat">
-        <div class="data"><Petstat :pet="pet" /></div>
-        <div class="items"></div>
+        <Petstat :pet="pet" />
     </div>
     <div class="pet">
         <Pet :animal="animal"/>
@@ -55,14 +54,6 @@ mounted(){
 
 </script>
 <style scoped>
-.data{
-    background-color:rgb(216, 158, 10);
-    margin-top: 20px;
-    border-radius: 40px;
-    padding: 20px;
-    color: black;
-    text-align: center;
-}
 .items{
     background-color:rgb(216, 158, 10);
     margin-top: 20px;
@@ -82,6 +73,7 @@ mounted(){
 }
 .stat{
     background-color: rgba(216, 158, 10, 70%);
+    margin: auto;
     margin-top: 20px;
     border-radius: 40px;
     padding: 20px;

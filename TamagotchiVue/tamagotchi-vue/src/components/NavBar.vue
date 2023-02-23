@@ -10,9 +10,6 @@
         <li class="nav-item">
          <Router-link class="nav-link active" aria-current="page" to="/account">Account</Router-link>
         </li>
-        <li class="nav-item">
-         <Router-link class="nav-link active" aria-current="page" to="/create">Create Pet</Router-link>
-        </li>
       </ul>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
