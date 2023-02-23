@@ -20,14 +20,26 @@ namespace TamagotchiApp
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
-        public Account[] GetUser(string path)
+        public User[] GetUsers(string path)
         {
-            Account[] retval = null;
+            User[] retval = null;
             HttpResponseMessage response = client.GetAsync(path).Result;
             if (response.IsSuccessStatusCode)
             {
                 string str = response.Content.ReadAsStringAsync().Result;
-                retval = JsonSerializer.Deserialize<Account[]>(str);
+                retval = JsonSerializer.Deserialize<User[]>(str);
+            }
+            return retval;
+        }
+        
+        public User DeleteUser(string path)
+        {
+            User retval = null;
+            HttpResponseMessage response = client.GetAsync(path).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                string str = response.Content.ReadAsStringAsync().Result;
+                retval = JsonSerializer.Deserialize<User>(str);
             }
             return retval;
         }

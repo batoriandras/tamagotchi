@@ -17,12 +17,29 @@ namespace TamagotchiApp
     /// <summary>
     /// Interaction logic for AccountsWindow.xaml
     /// </summary>
-    public partial class AccountsWindow : Window
+    partial class AccountsWindow : Window
     {
-        public AccountsWindow()
+        RestApiHandler handler;
+        public AccountsWindow(RestApiHandler handler)
         {
             InitializeComponent();
-            
+            this.handler = handler;
+
+        }
+
+        private void showallacc_Click(object sender, RoutedEventArgs e)
+        {
+            User[] users = handler.GetUsers("users");
+            for (int i = 0; i < users.Length; i++)
+            {
+                list.Items.Add($"Username: {users[i].data.username} - UserId: {users[i].data.id}");
+            }
+        }
+
+        private void Deleteaccount_Click(object sender, RoutedEventArgs e)
+        {
+            int id = int.Parse(accountid.Text);
+            User user = handler.DeleteUser("deleteuser/" + id);
         }
     }
 }
