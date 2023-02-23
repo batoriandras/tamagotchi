@@ -1,6 +1,6 @@
 <template>
         <ul id="statul">
-                <li><p>Days:</p></li>
+                <li><p>Pet name:</p><p>{{ pet.petname }}</p></li>
                 <li><p>Mood level:</p><p>{{ pet.mood }}</p></li>
                 <li><p>Hunger level:</p><p>{{ pet.hunger }}</p></li>
                 <li><p>Thirst level:</p><p>{{ pet.thirst }}</p></li>

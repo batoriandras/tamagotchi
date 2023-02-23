@@ -29,7 +29,6 @@ export default{
         });
             localStorage.setItem('petid',response.data.data.id);
             router.push({name: "pet"});
-            console.log(this.newpet);
         },
         onChange(event){
             this.animal_type = event.target.value;
