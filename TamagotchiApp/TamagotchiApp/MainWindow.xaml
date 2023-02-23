@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TamagotchiApp"
         mc:Ignorable="d"
     Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFD7EA98">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -18,9 +18,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Welcome to the Admin interface" Grid.Row="0" Grid.ColumnSpan="3" FontSize="20" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Opacity="0.6"/>
+        <Label Content="Welcome to the Admin interface" FontWeight="Bold" Grid.Row="0" Grid.ColumnSpan="3" FontSize="25" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Opacity="0.6"/>
         <Button x:Name="NewAnimal" FontSize="25" FontWeight="Bold" Content="New Animal" Grid.Column="0" Grid.Row="1" Width="200" Height="40" Background="Orange" Click="NewAnimal_Click"/>
         <Button x:Name="AllAccounts" FontSize="25" FontWeight="Bold" Content="All Accounts" Grid.Column="2" Grid.Row="1" Width="200" Height="40" Background="Orange" Click="AllAccount_Click" />
-        
+        <Button x:Name="close" FontSize="25" FontWeight="Bold" Content="Quit" Grid.Column="1" Grid.Row="3" Width="200" Height="40" Background="Orange" Click="close_Click" />   
     </Grid>
 </Window>

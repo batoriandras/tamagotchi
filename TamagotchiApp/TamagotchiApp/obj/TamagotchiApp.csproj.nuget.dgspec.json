@@ -1,7 +1,27 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {}
+=======
+<<<<<<< HEAD
+    "E:\\GIT PROJEKTEK\\Új mappa\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {}
+  },
+  "projects": {
+    "E:\\GIT PROJEKTEK\\Új mappa\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\GIT PROJEKTEK\\Új mappa\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
+        "projectName": "TamagotchiApp",
+        "projectPath": "E:\\GIT PROJEKTEK\\Új mappa\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj",
+        "packagesPath": "C:\\Users\\adama\\.nuget\\packages\\",
+        "outputPath": "E:\\GIT PROJEKTEK\\Új mappa\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\adama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "D:\\tamagotchi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {}
+>>>>>>> e634b1d8896f50d8f914c66cb830013bf2d61969
   },
   "projects": {
     "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\TamagotchiApp.csproj": {
@@ -14,7 +34,12 @@
         "outputPath": "D:\\projektek\\tamagochi\\tamagotchi\\TamagotchiApp\\TamagotchiApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\KiKi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\bator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> edf951680fe21509cc959ab8d5d224966c53c277
+>>>>>>> e634b1d8896f50d8f914c66cb830013bf2d61969
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +82,15 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+=======
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+>>>>>>> edf951680fe21509cc959ab8d5d224966c53c277
+>>>>>>> e634b1d8896f50d8f914c66cb830013bf2d61969
         }
       }
     }

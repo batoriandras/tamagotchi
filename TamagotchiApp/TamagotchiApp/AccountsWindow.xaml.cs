@@ -30,9 +30,10 @@ namespace TamagotchiApp
         private void showallacc_Click(object sender, RoutedEventArgs e)
         {
             Users users = handler.GetUsers("users");
+            list.Items.Clear();
             for (int i = 0; i < users.data.Length; i++)
             {
-                list.Items.Add($"Username: {users.data[i].username} - UserId: {users.data[i].user_id}");
+                list.Items.Add($"Username: {users.data[i].username} - UserId: {users.data[i].userid}");
             }
         }
 
@@ -40,6 +41,15 @@ namespace TamagotchiApp
         {
             int id = int.Parse(accountid.Text);
             handler.DeleteUser($"deleteuser/{id}");
+            MessageBox.Show($"A(z) {id} azonosítójú fiók törölve lett!");
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow(handler);
+            main.Show();
+            Hide();
+            main.Closed += (_, _) => Close();
         }
     }
 }
