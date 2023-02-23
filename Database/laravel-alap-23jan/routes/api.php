@@ -18,11 +18,11 @@ use App\Http\Controllers\AnimalController;
 */
 Route::post('/login', [UserController::class, 'authenticate']);
 Route::get('/logout', [UserController::class, 'logout']);
+Route::post('/newuser', [UserController::class, 'store']);
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/users', [UserController::class, 'index']);
     Route::get('/user/{id}', [UserController::class, 'show']);
-    Route::post('/newuser', [UserController::class, 'store']);
     Route::put('/edituser/{id}', [UserController::class, 'update']);
     Route::delete('/deleteuser/{id}', [UserController::class, 'destroy']);
 });

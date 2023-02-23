@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <RouterView />
+  <RouterView :key="$router.fullPath"/>
 </template>
 
 <style scoped>

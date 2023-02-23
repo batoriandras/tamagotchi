@@ -9,7 +9,6 @@ class Pets extends Model
 {
     protected $casts = [
         'birth' => 'datetime:Y-m-d',
-        /*'hungerdate' => 'datetime:Y-m-d H:i:s'*/
     ];
     protected $table = "pets";
     public function PetsAnimal(){

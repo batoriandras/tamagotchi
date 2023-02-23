@@ -34,11 +34,10 @@ class PetController extends Controller
         $newpet->users_id = Auth::id();
         $newpet->animals_id = $request->validated()['animals_id'];
         $newpet->petname = $request->validated()['petname'];
-        /*$newpet->hungerdate = datetime('Y-m-d H:i:s');*/
         $newpet->hunger = 100;
         $newpet->thirst = 100;
         $newpet->mood = 100;
-        $newpet->fatigue = 80;
+        $newpet->fatigue = 100;
         $newpet->birth = date('Y-m-d');
         $newpet->save();
         return new petResource($newpet);

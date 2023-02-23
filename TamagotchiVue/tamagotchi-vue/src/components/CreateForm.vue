@@ -8,14 +8,8 @@ export default{
             pet_name: '',
             animal_type: null,
             newpet: {
-                user_id: null,
                 animals_id: null,
-                petname: '',
-                hunger: 50,
-                thirst: 50,
-                mood: 50,
-                fatigue: 50,
-                birth: null
+                petname: ''
             }
         }
     },
@@ -29,14 +23,14 @@ export default{
             this.newpet.animals_id = this.animal_type;
             this.newpet.user_id = localStorage.getItem('userid');
             const response = await http.post('newpet', this.newpet);
-            this.router.push({name: "pet"});
+            localStorage.setItem('petid',response.data.data.id);
+            router.push({name: "pet"});
             console.log(this.newpet);
         },
         onChange(event){
             this.animal_type = event.target.value;
         }
     },
-    
     mounted(){
         this.animals();
     }

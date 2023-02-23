@@ -1,10 +1,11 @@
 <script setup>
 import {http} from '../helper/http.js'
 import NavBar from "../components/NavBar.vue"
-import router from '../router';
+import { useRouter } from 'vue-router';
+const router = useRouter();
 async function deleteAcc(){
     const response = await http.delete('deleteuser/' + localStorage.getItem('userid'));
-    this.router.push({name: 'login'});
+    router.push({name: 'login'});
 }
 </script>
 

@@ -13,6 +13,9 @@
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password" class="form-control" v-model="newUser.password">
                     <br>
+                    <label for="password_confirmation">Password</label><br>
+                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" v-model="newUser.password_confirmation">
+                    <br>
                     <button class="btn btn-warning text-dark" type="submit">Sign Up</button>
                     <button class="btn btn-warning text-dark" @click="redirect()">Login</button>
                 </form>
@@ -21,15 +24,14 @@
 </template>
 
 <script>
-import { resolveDirective } from 'vue';
-
 
 export default{
 data(){
     return{
         newUser:{
             username: "",
-            password: ""
+            password: "",
+            password_confirmation: ""
         }
     }
 },

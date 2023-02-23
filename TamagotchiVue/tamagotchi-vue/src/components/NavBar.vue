@@ -36,6 +36,7 @@ Router-link{
     font-size: larger;
 }
 </style>
+
 <script setup>
 import {http} from '../helper/http.js';
 import {useRouter} from "vue-router";
@@ -45,5 +46,4 @@ async function logout(){
   localStorage.clear();
   router.push({name:'login'});
 }
-
 </script>

@@ -1,7 +1,9 @@
 <template>
-    <Error :error="error" v-if="error!=null"/>
     <NavBar />
-<div class="container petcontainer">
+    <div class="alert alert-info" v-if="isloading" role="alert">
+  Loading...
+</div>
+<div class="container petcontainer" v-if="!isloading">
     <div class="stat">
         <div class="data"><Petstat :pet="pet" /></div>
         <div class="items"></div>
@@ -14,41 +16,36 @@
 </template>
 <script>
 import Petstat from "../components/PetStat.vue"
-import Error from "../components/Error.vue"
 import Pet from "../components/Pet.vue"
 import PetAction from "../components/PetAction.vue"
 import {http} from '../helper/http.js'
 import NavBar from "../components/NavBar.vue"
-import { handleError } from "vue"
 
 export default{
     components:{
         NavBar,
         Petstat,
         Pet,
-        PetAction,
-        Error
+        PetAction
     },
     data(){
 return{
     pet: {},
-    error: null,
-    animal:{}
+    animal:{},
+    isloading: true
 }
 },
     
 methods:{
         async petStats(){
-            const response = await http.get('pet/'+localStorage.getItem('userid')).catch(handleError);
+            const response = await http.get('pet/'+localStorage.getItem('petid'));
             this.pet = response.data.data;
             this.Animaldata()
         },
-        handleError(error){
-            this.error = error.response.data;
-        },
         async Animaldata(){
-            const response = await http.get('animal/'+this.pet.animals_id).catch(handleError);
+            const response = await http.get('animal/'+this.pet.animals_id);
             this.animal = response.data.data;
+            this.isloading = false;
         }
 },
 mounted(){

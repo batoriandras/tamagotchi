@@ -6,18 +6,18 @@ use Illuminate\Http\Request;
 use App\Http\Resources\userResource;
 use App\Models\User;
 use App\Http\Requests\UserRequest;
+use App\Http\Requests\LoginRequest;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    public function authenticate(UserRequest $request)
+    public function authenticate(LoginRequest $request)
     {
         $data = $request->validated();
         if(Auth::attempt($data)){
-            $token = Auth::user()->createToken('auth_token')->plainTextToken;
             if($request->wantsJson()){
-                return response()->json(["data" => ["token"=>$token,"userid"=>Auth::user()->id]],200);
+                return response()->json(["data"=>new userResource(Auth::user())],200);
             }
         }
         else{

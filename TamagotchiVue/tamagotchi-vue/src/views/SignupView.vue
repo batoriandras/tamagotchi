@@ -8,7 +8,7 @@ export default{
     },
     methods:{
         async registerUser(newUser){
-            const response = await http.post('newuser', newUser);
+            const response = await http.post('newuser',newUser);
             this.$router.push({name: 'login'});
         }
     }
