@@ -15,14 +15,18 @@ export default{
     },
     methods:{
         async animals(){
-            const response = await http.get('animals');
+            const response = await http.get('animals',{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             this.animaltypes = response.data.data;
         },
         async sendAnimal(){
             this.newpet.petname = this.pet_name;
             this.newpet.animals_id = this.animal_type;
             this.newpet.user_id = localStorage.getItem('userid');
-            const response = await http.post('newpet', this.newpet);
+            const response = await http.post('newpet', this.newpet,{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             localStorage.setItem('petid',response.data.data.id);
             router.push({name: "pet"});
             console.log(this.newpet);

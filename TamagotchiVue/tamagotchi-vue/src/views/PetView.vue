@@ -37,12 +37,16 @@ return{
     
 methods:{
         async petStats(){
-            const response = await http.get('pet/'+localStorage.getItem('petid'));
+            const response = await http.get('pet/'+localStorage.getItem('petid'),{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             this.pet = response.data.data;
             this.Animaldata()
         },
         async Animaldata(){
-            const response = await http.get('animal/'+this.pet.animals_id);
+            const response = await http.get('animal/'+this.pet.animals_id,{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             this.animal = response.data.data;
             this.isloading = false;
         }

@@ -126,7 +126,9 @@ export default{
     },
     methods:{
         async petStats(){
-            const response = await http.get('pet/'+localStorage.getItem('petid'));
+            const response = await http.get('pet/'+localStorage.getItem('petid'),{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             this.pet = response.data.data;
         },
         async Sleep(){
@@ -137,7 +139,9 @@ export default{
                 fatigue: this.IncFatigue
             }
             alert("Alszik egyet az Állatodat!");
-            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
+            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj,{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             window.location.reload();
         },
         async editHunger(){
@@ -148,7 +152,9 @@ export default{
                 fatigue: this.pet.fatigue
             }
             alert("Megetetted az Állatodat!");
-            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
+            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj,{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             window.location.reload();
         },
         async Medicine(){
@@ -159,7 +165,9 @@ export default{
                 fatigue: this.RedMedicineFatigue
             }
             alert("Szurit adtál az Állatodnak!");
-            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
+            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj,{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             window.location.reload();
         },
         async editThirst(){
@@ -170,7 +178,9 @@ export default{
                 fatigue: this.pet.fatigue
             }
             alert("Megitattad az Állatodat!");
-            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
+            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj,{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             window.location.reload();
         },
         async editMood(){
@@ -181,7 +191,9 @@ export default{
                 fatigue: this.pet.fatigue
             }
             alert("Megsimogattad az Állatodat!");
-            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
+            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj,{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             window.location.reload();
         },
         async huntMood(){
@@ -191,7 +203,9 @@ export default{
                 mood: this.IncMoodWithHunt,
                 fatigue: this.RedFatigue
             }
-            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj);
+            const response = await http.put('editpetstat/'+localStorage.getItem('petid'), this.obj,{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
             window.location.reload();
         }
     },

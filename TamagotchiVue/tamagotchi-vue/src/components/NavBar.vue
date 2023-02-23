@@ -39,7 +39,9 @@ import {http} from '../helper/http.js';
 import {useRouter} from "vue-router";
 const router = useRouter();
 async function logout(){
-  const response = await http.get('logout');
+  const response = await http.get('logout',{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
   localStorage.clear();
   router.push({name:'login'});
 }

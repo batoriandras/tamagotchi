@@ -4,7 +4,9 @@ import NavBar from "../components/NavBar.vue"
 import { useRouter } from 'vue-router';
 const router = useRouter();
 async function deleteAcc(){
-    const response = await http.delete('deleteuser/' + localStorage.getItem('userid'));
+    const response = await http.delete('deleteuser/' + localStorage.getItem('userid'),{
+                headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
+        });
     router.push({name: 'login'});
 }
 </script>
