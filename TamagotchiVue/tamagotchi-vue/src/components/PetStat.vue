@@ -1,5 +1,5 @@
 <template>
-        <ul>
+        <ul id="statul">
                 <li><p>Days:</p></li>
                 <li><p>Mood level:</p><p>{{ pet.mood }}</p></li>
                 <li><p>Hunger level:</p><p>{{ pet.hunger }}</p></li>
