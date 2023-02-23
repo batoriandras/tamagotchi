@@ -1,5 +1,6 @@
 <script>
 import {http} from '../helper/http.js'
+import router from '../router';
 export default{
     data(){
         return{
@@ -28,6 +29,7 @@ export default{
             this.newpet.animals_id = this.animal_type;
             this.newpet.user_id = localStorage.getItem('userid');
             const response = await http.post('newpet', this.newpet);
+            this.router.push({name: "pet"});
             console.log(this.newpet);
         },
         onChange(event){
