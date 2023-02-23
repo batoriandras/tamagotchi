@@ -39,7 +39,10 @@ namespace TamagotchiApp
 
         private void AllAccount_Click(object sender, RoutedEventArgs e)
         {
-
+            AccountsWindow aw = new AccountsWindow(handler);
+            aw.Show();
+            Hide();
+            aw.Closed += (_, _) => Close();
         }
     }
 }
