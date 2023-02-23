@@ -6,7 +6,7 @@
         </div>
         <div class="row mb-3 p-4">
             <div class="col">
-                <form @submit.prevent="$emit('registerUser',newUser)">
+                <form @submit.prevent="$emit('registerUser', newUser)">
                     <label for="username">Username</label><br>
                     <input type="text" name="username" id="username" class="form-control" v-model="newUser.username">
 
