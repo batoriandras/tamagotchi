@@ -8,24 +8,35 @@
 </template>
 <script setup>
 import { http } from '../helper/http';
+import {useRouter} from "vue-router";
+const router = useRouter();
 
     function incMood(){
-        let mood = 100;
-        http.put('/editpetstat/' + localStorage.getItem('userid'),{
-            mood: mood
-        }).then(() => {this.$router.push({name: 'pet'})});
+        
+        http.put('editpetstat/' + localStorage.getItem('userid'),
+        {
+            mood: 10,
+            thirst: thirst,
+            hunger: hunger,
+            fatigue: fatigue
+        });
+        router.push({name: 'pet'});
     }
     function incThirst(){
-        let thirst = 100;
-        http.put('/editpetstat/' + localStorage.getItem('userid'),{
-            thirst: thirst
-        }).then(() => {this.$router.push({name: 'pet'})});
+        
+        http.put('editpetstat/' + localStorage.getItem('userid'),
+        {
+            thirst: 10
+        });
+        router.push({name: 'pet'});
     }
     function incHunger(){
-        let hunger = 100;
-        http.put('/editpetstat/' + localStorage.getItem('userid'),{
-            hunger: hunger
-        }).then(() => {this.$router.push({name: 'pet'})});
+        
+        http.put('editpetstat/' + localStorage.getItem('userid'),
+        {
+            hunger: 10
+        });
+        router.push({name: 'pet'});
     }
 
 </script>

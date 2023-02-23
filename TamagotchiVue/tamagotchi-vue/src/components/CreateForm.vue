@@ -28,7 +28,7 @@ export default{
             <label for="animal">
                 {{ item.animaltype }}
             </label>
-            <input type="radio" name="animal" id="{{ item.id }}">
+            <input type="radio" name="animal" id="{{item.id}}">
         </div>
         
     </form>

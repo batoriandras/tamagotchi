@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Resources\petResource;
 use App\Models\Pets;
 use App\Http\Requests\PetRequest;
+use App\Http\Requests\PetStatRequest;
 
 class PetController extends Controller
 {
@@ -16,7 +17,7 @@ class PetController extends Controller
      */
     public function index()
     {
-        $data = Pets::all();
+        $data = auth()->user()->UsersPets;
         return petResource::collection($data);
     }
 
@@ -69,12 +70,13 @@ class PetController extends Controller
         return new petResource($data);
     }
 
-    public function updateStat($id)
+    public function updateStat(PetStatRequest $request, $id)
     {
         $data = Pets::findOrFail($id);
-        $newpet->hunger = int;
-        $newpet->thirst = int;
-        $newpet->mood = int;
+        $data->hunger = $request->validated()['hunger'];
+        $data->thirst = $request->validated()['thirst'];
+        $data->mood = $request->validated()['mood'];
+        $data->fatigue = $request->validated()['fatigue'];
         $data->save();
         return new petResource($data);
     }

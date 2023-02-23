@@ -25,7 +25,9 @@
 import {reactive,ref} from 'vue';
 import {http} from '../helper/http.js';
 import {useRouter} from "vue-router";
-const router = useRouter();
+import { defineProps } from 'vue';
+const props = defineProps({pets:Array});
+const router = useRouter()
 
 const userData = reactive({
     username: '',
@@ -43,6 +45,7 @@ async function login(){
         localStorage.setItem('userid',response.data.data.userid);
         router.push({name: 'pet'});
     }
+    
 }
 </script>
 <style scoped>

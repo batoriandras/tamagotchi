@@ -1,6 +1,7 @@
 <script setup>
 import {http} from '../helper/http.js'
 import CreateFormVue from '../components/CreateForm.vue';
+import NavBar from "../components/NavBar.vue"
 async function deleteAcc(){
     const response = await http.delete('delete/' +localStorage.getItem('userid'));
     
@@ -8,6 +9,7 @@ async function deleteAcc(){
 </script>
 
 <template>
+    <NavBar />
     <div class="container">
         <div class="row">
         <div class="col">

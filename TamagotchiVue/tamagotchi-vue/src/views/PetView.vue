@@ -1,5 +1,6 @@
 <template>
     <Error :error="error" v-if="error!=null"/>
+    <NavBar />
 <div class="container petcontainer">
     <div class="stat">
         <div class="data"><Petstat :pet="pet" /></div>
@@ -17,10 +18,12 @@ import Error from "../components/Error.vue"
 import Pet from "../components/Pet.vue"
 import PetAction from "../components/PetAction.vue"
 import {http} from '../helper/http.js'
+import NavBar from "../components/NavBar.vue"
 import { handleError } from "vue"
 
 export default{
     components:{
+        NavBar,
         Petstat,
         Pet,
         PetAction,
