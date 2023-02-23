@@ -1,9 +1,9 @@
 <template>
     <div class="row p-3">
-        <div class="col"><button class="btn" @click="editHunger()">Eat</button></div>
-        <div class="col"><button class="btn" @click="editThirst()">Drink</button></div>
-        <div class="col"><button class="btn" @click="huntMood()">Hunt</button></div>
-        <div class="col"><button class="btn" @click="editMood()">Pet</button></div>
+        <div class="col"><button class="btn" id="eat" @click="editHunger()">Eat</button></div>
+        <div class="col"><button class="btn" id="drink" @click="editThirst()">Drink</button></div>
+        <div class="col"><button class="btn" id="hunt" @click="huntMood()">Hunt</button></div>
+        <div class="col"><button class="btn" id="pet" @click="editMood()">Pet</button></div>
     </div>
 </template>
 <script>
