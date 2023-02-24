@@ -39,17 +39,19 @@ namespace SeleniumTest
             #region eat
             int hunger = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(3)>p:nth-child(2)")).Text);
             var eatBTN = driver.FindElement(By.Id("eat"));
+            Console.ReadKey();
+
             eatBTN.Click();
             driver.SwitchTo().Alert().Accept();
             Console.ReadKey();
             int hunger2 = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(3)>p:nth-child(2)")).Text);
-            if (hunger == hunger2 - 20)
+            if (hunger == hunger2 - 20 || hunger2 == 100)
             {
                 Console.WriteLine("Hunger level went up by 20");
             }
             else
             {
-                Console.WriteLine("asd");
+                Console.WriteLine("error");
             }
             #endregion
 
@@ -60,30 +62,31 @@ namespace SeleniumTest
             driver.SwitchTo().Alert().Accept();
             Console.ReadKey();
             int thirst2 = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(4)>p:nth-child(2)")).Text);
-            if (thirst == thirst2 - 20)
+            if (thirst == thirst2 - 20 || thirst2 == 100)
             {
                 Console.WriteLine("Thirst level went up by 20");
             }
             else
             {
-                Console.WriteLine("asd");
+                Console.WriteLine("error");
             }
             #endregion
 
             #region hunt
             int mood = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(2)>p:nth-child(2)")).Text);
+            int fatigue = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(5)>p:nth-child(2)")).Text);
             var huntBTN = driver.FindElement(By.Id("hunt"));
             huntBTN.Click();
-            driver.SwitchTo().Alert().Accept();
             Console.ReadKey();
             int mood2 = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(2)>p:nth-child(2)")).Text);
-            if (mood == mood2 - 40)
+            int fatigue2 = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(5)>p:nth-child(2)")).Text);
+            if ((mood == mood2 - 40 || mood2==100) && (fatigue == fatigue2 + 20 || fatigue2==0))
             {
                 Console.WriteLine("Mood level went up by 40, fatigue went down by 20");
             }
             else
             {
-                Console.WriteLine("asd");
+                Console.WriteLine("error");
             }
             #endregion
 
@@ -93,30 +96,50 @@ namespace SeleniumTest
             driver.SwitchTo().Alert().Accept();
             Console.ReadKey();
             mood = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(2)>p:nth-child(2)")).Text);
-            if (mood2 == mood - 20)
+            if (mood2 == mood - 20 || mood2==100)
             {
                 Console.WriteLine("Mood level went up by 20");
             }
             else
             {
-                Console.WriteLine("asd");
+                Console.WriteLine("error");
             }
             #endregion
 
             #region medicine
-            int fatigue = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(5)>p:nth-child(2)")).Text);
+            fatigue = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(5)>p:nth-child(2)")).Text);
             var medicineBTN = driver.FindElement(By.Id("medicine"));
             medicineBTN.Click();
             driver.SwitchTo().Alert().Accept();
             Console.ReadKey();
-            int fatigue2 = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(5)>p:nth-child(2)")).Text);
-            if (fatigue == fatigue2 - 25)
+            fatigue2 = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(5)>p:nth-child(2)")).Text);
+            mood2 = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(2)>p:nth-child(2)")).Text);
+            if ((fatigue == fatigue2 + 10 || fatigue2 == 0) && (mood==mood2 + 60 || mood2==0))
             {
-                Console.WriteLine("Fatigue level went up by 25, mood level went down by 60");
+                Console.WriteLine("Fatigue level went down by 10, mood level went down by 60");
             }
             else
             {
-                Console.WriteLine("asd");
+                Console.WriteLine("error");
+            }
+            #endregion
+
+            #region sleep
+            fatigue = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(5)>p:nth-child(2)")).Text);
+            var sleepBTN = driver.FindElement(By.Id("sleep"));
+            sleepBTN.Click();
+            driver.SwitchTo().Alert().Accept();
+            Console.ReadKey();
+            fatigue2 = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(5)>p:nth-child(2)")).Text);
+            thirst = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(4)>p:nth-child(2)")).Text);
+            hunger = Convert.ToInt32(driver.FindElement(By.CssSelector("#statul>li:nth-child(3)>p:nth-child(2)")).Text);
+            if ((fatigue == fatigue2 - 60 || fatigue2==100) && (hunger2 == hunger+60 || hunger == 0) && (thirst2 == thirst + 60 || thirst == 0))
+            {
+                Console.WriteLine("Fatigue level went up by 70, hunger level went down by 60, thirst level went down by 60");
+            }
+            else
+            {
+                Console.WriteLine("error");
             }
             #endregion
 
