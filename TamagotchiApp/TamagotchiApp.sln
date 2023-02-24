@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamagotchiApp", "TamagotchiApp\TamagotchiApp.csproj", "{AC783301-3569-489A-B288-E5AF6E7DED80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TamagotchiApp", "TamagotchiApp\TamagotchiApp.csproj", "{AC783301-3569-489A-B288-E5AF6E7DED80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamagotchiAppTests", "TamagotchiAppTests\TamagotchiAppTests.csproj", "{923BABC0-997F-460E-997D-A775E1B225FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AC783301-3569-489A-B288-E5AF6E7DED80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC783301-3569-489A-B288-E5AF6E7DED80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC783301-3569-489A-B288-E5AF6E7DED80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{923BABC0-997F-460E-997D-A775E1B225FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923BABC0-997F-460E-997D-A775E1B225FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923BABC0-997F-460E-997D-A775E1B225FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923BABC0-997F-460E-997D-A775E1B225FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

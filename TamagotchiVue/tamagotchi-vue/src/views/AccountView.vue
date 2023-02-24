@@ -7,7 +7,8 @@ export default{
     },
     data(){
         return{
-            user: ''
+            user: '',
+            isloading: true
         }
     },
     methods:{
@@ -16,6 +17,7 @@ export default{
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}`}
         });
             this.user = response.data.data.username;
+            this.isloading = false;
         },
         async deleteAcc(){
             const response = await http.delete('deleteuser/' + localStorage.getItem('userid'),{
@@ -33,7 +35,10 @@ export default{
 
 <template>
     <NavBar />
-    <div class="container">
+    <div class="alert alert-info" v-if="isloading" role="alert">
+  Loading...
+</div>
+    <div class="container" v-if="!isloading">
         <div class="row">
         <div class="col">
             <h1>Welcome {{ this.user }}</h1>
