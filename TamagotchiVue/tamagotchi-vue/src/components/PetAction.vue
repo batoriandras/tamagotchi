@@ -88,12 +88,12 @@ export default{
             }
         },
         RedMedicineFatigue(){
-            if(this.pet.mood < 10 )
+            if(this.pet.fatigue < 10 )
             {
             return 0;
             }
             else{
-                return this.pet.mood - 10;
+                return this.pet.fatigue - 10;
             }
         },
         IncFatigue(){
