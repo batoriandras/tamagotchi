@@ -41,7 +41,6 @@ namespace TamagotchiApp
         {
             int id = int.Parse(accountid.Text);
             handler.DeleteUser($"deleteuser/{id}");
-            MessageBox.Show($"A(z) {id} azonosítójú fiók törölve lett!");
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
@@ -49,7 +48,7 @@ namespace TamagotchiApp
             MainWindow main = new MainWindow(handler);
             main.Show();
             Hide();
-            main.Closed += (_, _) => Close();
+            main.Closed += (_,_) => Close();
         }
     }
 }

@@ -32,10 +32,9 @@ namespace TamagotchiApp
             return retval;
         }
         
-        public bool DeleteUser(string path)
+        public void DeleteUser(string path)
         {
             HttpResponseMessage response = client.DeleteAsync(path).Result;
-            return response.IsSuccessStatusCode;
         }
         public Account PostUser(string path,Dictionary<string,string> values)
         {

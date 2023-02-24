@@ -12,8 +12,7 @@
 
                     <label for="password">Password</label><br>
                     <input type="password" name="password" id="password" class="form-control" v-model="newUser.password">
-                    <br>
-                    <label for="password_confirmation">Password</label><br>
+                    <label for="password_confirmation">Password Again</label><br>
                     <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" v-model="newUser.password_confirmation">
                     <br>
                     <button class="btn btn-warning text-dark" type="submit">Sign Up</button>
